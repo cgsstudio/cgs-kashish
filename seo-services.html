@@ -930,6 +930,30 @@ ul,ol{padding:0;list-style:none}
 }
 </style>
 
+
+<style id="seo-page-heading-and-proof-fix">
+/* Keep the metrics and client list inside the same centered content wrapper. */
+#proof .wrap{width:min(100% - 2.5rem, 1240px);margin-inline:auto}
+#proof .metrics{width:100%;grid-template-columns:repeat(4,minmax(0,1fr))}
+#proof .brands-built{max-width:100%;margin:1.5rem 0 0;line-height:1.75}
+#proof .brands-built strong{font-weight:700}
+
+/* Consistent heading hierarchy throughout the SEO page:
+   one shared section-heading scale, one shared card-heading scale. */
+h1.h1{font-size:clamp(2.5rem,5.4vw,4.9rem);line-height:1.04}
+h2.h2{font-family:var(--display);font-size:clamp(1.95rem,3.5vw,3.25rem);font-weight:700;letter-spacing:-.03em;line-height:1.04;text-wrap:balance}
+h3:not(.foot-cta-title){font-family:var(--display);font-size:clamp(1.15rem,1.5vw,1.42rem);font-weight:700;letter-spacing:-.02em;line-height:1.22}
+@media(max-width:900px){
+  #proof .metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:560px){
+  #proof .wrap{width:min(100% - 2rem,1240px)}
+  #proof .metrics{grid-template-columns:1fr}
+  #proof .metric{padding:1.2rem}
+  h2.h2{font-size:clamp(1.8rem,7vw,2.4rem)}
+}
+</style>
+
 </head>
 <body>
 <div class="progress" aria-hidden="true"><i id="progBar"></i></div>
@@ -1394,8 +1418,7 @@ ul,ol{padding:0;list-style:none}
         <div class="metric"><b><span class="cnt" data-to="6">0</span><span class="u">+</span></b><span>Countries served: India, USA, UK, Canada, UAE, Australia</span></div>
         <div class="metric"><b><span class="cnt" data-to="3">0</span><span class="u">‑in‑1</span></b><span>SEO, AEO and GEO strategy under a single in-house team</span></div>
       </div>
-      </div>
-      <p class="small" style="margin-top:1.5rem;max-width:70ch" data-rv>
+      <p class="small brands-built" data-rv>
         <strong style="color:var(--on-light)">Brands we have built for:</strong> Cyber Vantage · Jagatjit Industry ·
         Tools Competition · Mr. Sprinkle · Premier Properties · Luxury Rentfolio · Active Auto · Stratica Dermatology ·
         Brysa · Siddhraj · Lecon Energetics · Supreme Automobile · BidX · 24 Events · Fireflies · Defi Designs ·

@@ -131,6 +131,28 @@ header#nav.scrolled {
   font-weight: 500;
 }
 
+/* Keep navigation hover text red on Blogs, Career and Contact pages only. */
+.blogs-page .nav-links a.roll:hover,
+.blogs-page .nav-links a.roll:focus-visible,
+.blogs-page .nav-links a.roll:hover span,
+.blogs-page .nav-links a.roll:focus-visible span,
+.blogs-page .nav-links a.roll:hover::after,
+.blogs-page .nav-links a.roll:focus-visible::after,
+body#top .nav-links a.roll:hover,
+body#top .nav-links a.roll:focus-visible,
+body#top .nav-links a.roll:hover span,
+body#top .nav-links a.roll:focus-visible span,
+body#top .nav-links a.roll:hover::after,
+body#top .nav-links a.roll:focus-visible::after,
+.contact-page .nav-links a.roll:hover,
+.contact-page .nav-links a.roll:focus-visible,
+.contact-page .nav-links a.roll:hover span,
+.contact-page .nav-links a.roll:focus-visible span,
+.contact-page .nav-links a.roll:hover::after,
+.contact-page .nav-links a.roll:focus-visible::after {
+  color: #E5162B !important;
+}
+
 /* Roll animation for nav links */
 .roll {
   display: inline-block;

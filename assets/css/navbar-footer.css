@@ -1958,3 +1958,21 @@ header#nav .nav-links a.roll:focus-visible::after {
     left: 14px !important;
   }
 }
+
+
+/* Keep the global CHAMELEO footer wordmark visible on every page. */
+.foot > .foot-word,
+footer.foot .foot-word {
+  display: flex !important;
+  position: relative !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  min-height: 1em;
+  z-index: 1;
+}
+footer.foot .foot-word span {
+  display: inline-block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  color: rgba(255,255,255,.16) !important;
+}

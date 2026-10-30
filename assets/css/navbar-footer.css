@@ -1638,3 +1638,24 @@ body#top header#nav .nav-links a.roll:focus-visible::after,
 .contact-page header#nav .nav-links a.roll:focus-visible::after {
   color: #E5162B !important;
 }
+
+
+/* Career page legacy hover pill override: keep the same red roll effect as index.html. */
+body#top header#nav .nav-links a.roll:hover,
+body#top header#nav .nav-links a.roll:focus-visible,
+body#top header#nav .nav-links a.roll:hover span,
+body#top header#nav .nav-links a.roll:focus-visible span,
+body#top header#nav .nav-links a.roll:hover::after,
+body#top header#nav .nav-links a.roll:focus-visible::after {
+  color: #E5162B !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+body#top header#nav .nav-links a.roll::after {
+  color: #E5162B !important;
+  background: transparent !important;
+  text-shadow: none !important;
+}

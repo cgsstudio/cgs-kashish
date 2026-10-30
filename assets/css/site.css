@@ -5115,3 +5115,38 @@ a.roll.nav-parent .nav-caret {
   object-fit: contain;
   vertical-align: middle;
 }
+
+
+/* Problem → Fix interaction: red cross by default, green check on hover */
+.pf-node .x,
+.pf-node .ok {
+  transition: opacity .28s ease, transform .28s ease, background-color .28s ease;
+}
+.pf-node .x {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+.pf-node .ok {
+  opacity: 0;
+  transform: scale(.3) rotate(-90deg);
+}
+.pf-row:hover .pf-node .x,
+.pf-row:focus-within .pf-node .x {
+  opacity: 0;
+  transform: scale(.3) rotate(90deg);
+}
+.pf-row:hover .pf-node .ok,
+.pf-row:focus-within .pf-node .ok {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+}
+.pf-node span svg {
+  display: block;
+  width: 21px;
+  height: 21px;
+  fill: none;
+  stroke: #fff;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

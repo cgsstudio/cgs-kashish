@@ -1565,6 +1565,7 @@ body#top header.nav .burger,
 }
 
 @media (max-width: 1100px) {
+
   .blogs-page header.nav .nav-links,
   .blogs-page header.nav .nav-cta,
   body#top header.nav .nav-links,
@@ -1598,6 +1599,7 @@ body#top header.nav .burger,
 }
 
 @media (max-width: 640px) {
+
   .blogs-page header.nav .nav-logo img,
   body#top header.nav .nav-logo img,
   .contact-page header.nav .nav-logo img {
@@ -1654,6 +1656,7 @@ body#top header#nav .nav-links a.roll:focus-visible::after {
   border-radius: 0 !important;
   box-shadow: none !important;
 }
+
 body#top header#nav .nav-links a.roll::after {
   color: #E5162B !important;
   background: transparent !important;
@@ -1771,8 +1774,8 @@ header#nav .nav-links a.roll:focus-visible::after {
     gap: 12px !important;
     border-radius: 16px !important;
     background: rgba(14, 15, 20, .92) !important;
-    border: 1px solid rgba(255,255,255,.14) !important;
-    box-shadow: 0 8px 28px rgba(0,0,0,.24) !important;
+    border: 1px solid rgba(255, 255, 255, .14) !important;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, .24) !important;
     backdrop-filter: blur(16px) saturate(1.4) !important;
     -webkit-backdrop-filter: blur(16px) saturate(1.4) !important;
   }
@@ -1848,6 +1851,7 @@ header#nav .nav-links a.roll:focus-visible::after {
 
 /* FINAL OVERRIDE: when the off-canvas drawer is open, show ONLY its logo. */
 @media (max-width: 1100px) {
+
   body.service-page-body.menu-open #nav .nav-logo,
   body.service-page-body.menu-open #nav .nav-logo img {
     display: none !important;
@@ -1869,8 +1873,9 @@ header#nav .nav-links a.roll:focus-visible::after {
 /* HARD FIX: when mobile/tablet drawer is open, hide the header-bar logo
    regardless of page-specific body classes. Keep the off-canvas logo. */
 @media (max-width: 1100px) {
-  body.menu-open header#nav .nav-in > .nav-logo,
-  body.menu-open header#nav .nav-in > a.nav-logo,
+
+  body.menu-open header#nav .nav-in>.nav-logo,
+  body.menu-open header#nav .nav-in>a.nav-logo,
   body.menu-open #nav .nav-logo {
     display: none !important;
     opacity: 0 !important;
@@ -1895,6 +1900,7 @@ header#nav .nav-links a.roll:focus-visible::after {
 /* MOBILE/TABLET DRAWER CLOSE CONTROL — move the actual X to top-right.
    Remove the decorative plus pseudo-element so only one close control remains. */
 @media (max-width: 1100px) {
+
   body.menu-open header#nav .burger,
   body.menu-open #nav .burger {
     position: fixed !important;
@@ -1918,6 +1924,7 @@ header#nav .nav-links a.roll:focus-visible::after {
 }
 
 @media (max-width: 640px) {
+
   body.menu-open header#nav .burger,
   body.menu-open #nav .burger {
     top: 52px !important;
@@ -1928,6 +1935,7 @@ header#nav .nav-links a.roll:focus-visible::after {
 
 /* Align drawer close button horizontally with the off-canvas logo. */
 @media (max-width: 1100px) {
+
   body.menu-open header#nav .burger,
   body.menu-open #nav .burger {
     top: 14px !important;
@@ -1947,6 +1955,7 @@ header#nav .nav-links a.roll:focus-visible::after {
 }
 
 @media (max-width: 640px) {
+
   body.menu-open header#nav .burger,
   body.menu-open #nav .burger {
     top: 14px !important;
@@ -1961,8 +1970,8 @@ header#nav .nav-links a.roll:focus-visible::after {
 
 
 /* FINAL FIX: make the CHAMELEO wordmark clearly visible below the legal footer row. */
-footer.foot > .foot-word,
-.foot > .foot-word {
+footer.foot>.foot-word,
+.foot>.foot-word {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
@@ -1979,12 +1988,13 @@ footer.foot > .foot-word,
   font-size: clamp(3rem, 12vw, 13rem) !important;
   font-weight: 800 !important;
   line-height: 0.9 !important;
-  letter-spacing: 0.015em !important;
+  letter-spacing: 15% !important;
   opacity: 1 !important;
   visibility: visible !important;
 }
-footer.foot > .foot-word span,
-.foot > .foot-word span {
+
+footer.foot>.foot-word span,
+.foot>.foot-word span {
   display: inline-block !important;
   flex: 0 0 auto !important;
   color: #303137 !important;
@@ -1992,9 +2002,11 @@ footer.foot > .foot-word span,
   visibility: visible !important;
   font: inherit !important;
 }
+
 @media (max-width: 768px) {
-  footer.foot > .foot-word,
-  .foot > .foot-word {
+
+  footer.foot>.foot-word,
+  .foot>.foot-word {
     min-height: 3.5rem !important;
     font-size: clamp(2.5rem, 13vw, 5rem) !important;
     margin-top: 1.5rem !important;
@@ -2008,7 +2020,8 @@ footer.foot > .foot-word span,
 body.home-page footer.foot {
   overflow: visible !important;
 }
-body.home-page footer.foot > .foot-word {
+
+body.home-page footer.foot>.foot-word {
   width: 100% !important;
   max-width: 100% !important;
   justify-content: center !important;
@@ -2019,12 +2032,14 @@ body.home-page footer.foot > .foot-word {
   overflow: visible !important;
   white-space: nowrap !important;
 }
-body.home-page footer.foot > .foot-word span {
+
+body.home-page footer.foot>.foot-word span {
   flex: 0 1 auto !important;
   min-width: 0 !important;
 }
+
 @media (max-width: 768px) {
-  body.home-page footer.foot > .foot-word {
+  body.home-page footer.foot>.foot-word {
     font-size: clamp(2.5rem, 12vw, 5rem) !important;
   }
 }

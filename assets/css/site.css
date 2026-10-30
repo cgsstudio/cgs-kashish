@@ -5085,3 +5085,33 @@ a.roll.nav-parent .nav-caret {
         padding-top: 98px !important;
     }
 }
+
+/* Exact Chameleo red sparkle icon sizing on homepage */
+.ticker-star img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  vertical-align: middle;
+}
+.pf-node .x img,
+.pf-node .ok img {
+  display: block;
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.fchip.fa img {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  vertical-align: -2px;
+}
+.stars-mini img {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  vertical-align: middle;
+}

@@ -76,7 +76,12 @@
       recalc() {
         const newW = measureDistance();
         if (newW > 10 && Math.abs(newW - w) > 1.5) {
+          // Keep the current animation phase when fonts/images/viewport change.
+          // This prevents the marquee from jumping or flashing after a re-measure.
+          const phase = (((currentX + userOffset) % w) + w) % w;
+          const progress = phase / w;
           w = newW;
+          currentX = progress * w - userOffset;
         }
       },
       stepNext() {
@@ -92,10 +97,12 @@
       update(dt) {
         // Smoothly lerp hover deceleration / acceleration
         const targetScale = hover ? 0 : 1;
-        currentSpeed += (speed * targetScale - currentSpeed) * 0.1;
+        // Time-based easing stays consistent across 60/90/120Hz displays.
+        const ease = 1 - Math.exp(-dt * 9);
+        currentSpeed += (speed * targetScale - currentSpeed) * ease;
 
-        // Smoothly lerp Next / Prev offset
-        userOffset += (targetUserOffset - userOffset) * 0.14;
+        // Smoothly lerp Next / Prev offset without frame-rate dependent jumps.
+        userOffset += (targetUserOffset - userOffset) * (1 - Math.exp(-dt * 10));
 
         // Advance position according to speed and frame delta
         if (reverse) {

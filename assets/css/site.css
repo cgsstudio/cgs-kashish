@@ -5164,3 +5164,23 @@ a.roll.nav-parent .nav-caret {
   height: 35px;
   object-fit: contain;
 }
+
+
+/* Smooth animation rendering: prevent marquee phase jumps and layer flicker */
+.m-track,
+.m-track > .m-set,
+.m-track > .m-clone {
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.m-track {
+  contain: layout paint;
+}
+@media (prefers-reduced-motion: reduce) {
+  .m-track {
+    transform: none !important;
+    -webkit-transform: none !important;
+  }
+}

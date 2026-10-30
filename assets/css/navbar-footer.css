@@ -1890,3 +1890,37 @@ header#nav .nav-links a.roll:focus-visible::after {
     visibility: visible !important;
   }
 }
+
+
+/* MOBILE/TABLET DRAWER CLOSE CONTROL — move the actual X to top-right.
+   Remove the decorative plus pseudo-element so only one close control remains. */
+@media (max-width: 1100px) {
+  body.menu-open header#nav .burger,
+  body.menu-open #nav .burger {
+    position: fixed !important;
+    top: 48px !important;
+    right: 18px !important;
+    left: auto !important;
+    z-index: 3005 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    transform: none !important;
+  }
+
+  body.menu-open #mnav::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.menu-open header#nav .burger,
+  body.menu-open #nav .burger {
+    top: 52px !important;
+    right: 18px !important;
+  }
+}

@@ -1960,19 +1960,44 @@ header#nav .nav-links a.roll:focus-visible::after {
 }
 
 
-/* Keep the global CHAMELEO footer wordmark visible on every page. */
-.foot > .foot-word,
-footer.foot .foot-word {
+/* FINAL FIX: make the CHAMELEO wordmark clearly visible below the legal footer row. */
+footer.foot > .foot-word,
+.foot > .foot-word {
   display: flex !important;
-  position: relative !important;
-  visibility: visible !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  min-height: clamp(4rem, 14vw, 13rem) !important;
+  height: auto !important;
+  margin: clamp(1.5rem, 3vw, 3rem) 0 0 !important;
+  padding: 0 1rem 0.08em !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  font-family: var(--brand-display, 'Bricolage Grotesque', sans-serif) !important;
+  font-size: clamp(3rem, 12vw, 13rem) !important;
+  font-weight: 800 !important;
+  line-height: 0.9 !important;
+  letter-spacing: 0.015em !important;
   opacity: 1 !important;
-  min-height: 1em;
-  z-index: 1;
+  visibility: visible !important;
 }
-footer.foot .foot-word span {
+footer.foot > .foot-word span,
+.foot > .foot-word span {
   display: inline-block !important;
-  visibility: visible !important;
+  flex: 0 0 auto !important;
+  color: #303137 !important;
   opacity: 1 !important;
-  color: rgba(255,255,255,.16) !important;
+  visibility: visible !important;
+  font: inherit !important;
+}
+@media (max-width: 768px) {
+  footer.foot > .foot-word,
+  .foot > .foot-word {
+    min-height: 3.5rem !important;
+    font-size: clamp(2.5rem, 13vw, 5rem) !important;
+    margin-top: 1.5rem !important;
+    padding-inline: 0.5rem !important;
+  }
 }

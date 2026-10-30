@@ -1864,3 +1864,29 @@ header#nav .nav-links a.roll:focus-visible::after {
     background: url('/assets/images/image-f445d64e51004507.webp') center left / contain no-repeat !important;
   }
 }
+
+
+/* HARD FIX: when mobile/tablet drawer is open, hide the header-bar logo
+   regardless of page-specific body classes. Keep the off-canvas logo. */
+@media (max-width: 1100px) {
+  body.menu-open header#nav .nav-in > .nav-logo,
+  body.menu-open header#nav .nav-in > a.nav-logo,
+  body.menu-open #nav .nav-logo {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    width: 0 !important;
+    max-width: 0 !important;
+    flex: 0 0 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    pointer-events: none !important;
+  }
+
+  body.menu-open #mnav::before {
+    display: block !important;
+    content: "" !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}

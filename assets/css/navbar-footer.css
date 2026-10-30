@@ -1612,3 +1612,29 @@ body#top header.nav .burger,
   }
 }
 
+
+
+/* ================================================================
+   NAV HOVER COLOR FIX — MATCH INDEX / SERVICE PAGE
+   Force the animated navigation label to brand red on inner pages.
+   ================================================================ */
+.blogs-page header#nav .nav-links a.roll:hover,
+.blogs-page header#nav .nav-links a.roll:focus-visible,
+.blogs-page header#nav .nav-links a.roll:hover span,
+.blogs-page header#nav .nav-links a.roll:focus-visible span,
+.blogs-page header#nav .nav-links a.roll:hover::after,
+.blogs-page header#nav .nav-links a.roll:focus-visible::after,
+body#top header#nav .nav-links a.roll:hover,
+body#top header#nav .nav-links a.roll:focus-visible,
+body#top header#nav .nav-links a.roll:hover span,
+body#top header#nav .nav-links a.roll:focus-visible span,
+body#top header#nav .nav-links a.roll:hover::after,
+body#top header#nav .nav-links a.roll:focus-visible::after,
+.contact-page header#nav .nav-links a.roll:hover,
+.contact-page header#nav .nav-links a.roll:focus-visible,
+.contact-page header#nav .nav-links a.roll:hover span,
+.contact-page header#nav .nav-links a.roll:focus-visible span,
+.contact-page header#nav .nav-links a.roll:hover::after,
+.contact-page header#nav .nav-links a.roll:focus-visible::after {
+  color: #E5162B !important;
+}

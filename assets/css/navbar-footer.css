@@ -2001,3 +2001,22 @@ footer.foot > .foot-word span,
     padding-inline: 0.5rem !important;
   }
 }
+
+
+/* FOOTER SPACING: bring the CHAMELEO wordmark closer to the legal row. */
+footer.foot > .wrap {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+footer.foot .foot-bottom {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+footer.foot > .foot-word {
+  margin-top: 1rem !important;
+}
+@media (max-width: 768px) {
+  footer.foot > .foot-word {
+    margin-top: 0.75rem !important;
+  }
+}

@@ -2001,30 +2001,3 @@ footer.foot > .foot-word span,
     padding-inline: 0.5rem !important;
   }
 }
-
-
-
-/* HOMEPAGE ONLY: prevent the final CHAMELEO letter from being clipped. */
-body.home-page footer.foot {
-  overflow: visible !important;
-}
-body.home-page footer.foot > .foot-word {
-  width: 100% !important;
-  max-width: 100% !important;
-  justify-content: center !important;
-  padding-inline: 0 !important;
-  box-sizing: border-box !important;
-  font-size: clamp(3rem, 10.8vw, 13rem) !important;
-  letter-spacing: 0 !important;
-  overflow: visible !important;
-  white-space: nowrap !important;
-}
-body.home-page footer.foot > .foot-word span {
-  flex: 0 1 auto !important;
-  min-width: 0 !important;
-}
-@media (max-width: 768px) {
-  body.home-page footer.foot > .foot-word {
-    font-size: clamp(2.5rem, 12vw, 5rem) !important;
-  }
-}

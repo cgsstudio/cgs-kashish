@@ -1924,3 +1924,37 @@ header#nav .nav-links a.roll:focus-visible::after {
     right: 18px !important;
   }
 }
+
+
+/* Align drawer close button horizontally with the off-canvas logo. */
+@media (max-width: 1100px) {
+  body.menu-open header#nav .burger,
+  body.menu-open #nav .burger {
+    top: 14px !important;
+    right: 18px !important;
+    left: auto !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+  }
+
+  body.menu-open #mnav::before {
+    top: 18px !important;
+    left: 16px !important;
+    height: 30px !important;
+    width: clamp(115px, 34vw, 170px) !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.menu-open header#nav .burger,
+  body.menu-open #nav .burger {
+    top: 14px !important;
+    right: 16px !important;
+  }
+
+  body.menu-open #mnav::before {
+    top: 18px !important;
+    left: 14px !important;
+  }
+}

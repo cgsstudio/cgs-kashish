@@ -1372,3 +1372,243 @@ body.contact-page #main>section:first-of-type {
     bottom: 8.5rem !important;
   }
 }
+
+/* ================================================================
+   SERVICE-PAGE HEADER PARITY
+   Keep Blogs, Career and Contact header identical to service pages.
+   Scoped to these three pages; page content remains untouched.
+   ================================================================ */
+.blogs-page header.nav,
+body#top header.nav,
+.contact-page header.nav {
+  position: fixed !important;
+  top: 14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  z-index: 2000 !important;
+  display: flex !important;
+  justify-content: center !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+}
+
+.blogs-page header.nav .nav-in,
+body#top header.nav .nav-in,
+.contact-page header.nav .nav-in {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 76px !important;
+  margin: 0 auto !important;
+  padding: 0 clamp(1rem, 4vw, 3rem) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1.5rem !important;
+  pointer-events: auto !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+
+.blogs-page header.nav.scrolled .nav-in,
+body#top header.nav.scrolled .nav-in,
+.contact-page header.nav.scrolled .nav-in {
+  max-width: min(1240px, 94%) !important;
+  height: 64px !important;
+  padding: 0.0rem 1.2rem 0.0rem 1.2rem !important;
+  border-radius: 99px !important;
+  background: rgba(14, 15, 20, .88) !important;
+  backdrop-filter: blur(18px) saturate(1.5) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(1.5) !important;
+  border: 1px solid rgba(255, 255, 255, .16) !important;
+  box-shadow: 0 18px 50px -18px rgba(0, 0, 0, .6) !important;
+}
+
+.blogs-page header.nav .nav-logo,
+body#top header.nav .nav-logo,
+.contact-page header.nav .nav-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  flex: 0 0 auto !important;
+}
+
+.blogs-page header.nav .nav-logo img,
+body#top header.nav .nav-logo img,
+.contact-page header.nav .nav-logo img {
+  display: block !important;
+  width: auto !important;
+  height: 34px !important;
+  max-height: 34px !important;
+  object-fit: contain !important;
+}
+
+.blogs-page header.nav .nav-links,
+body#top header.nav .nav-links,
+.contact-page header.nav .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: clamp(.9rem, 1.7vw, 1.8rem) !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+.blogs-page header.nav .nav-links a.roll,
+body#top header.nav .nav-links a.roll,
+.contact-page header.nav .nav-links a.roll {
+  display: inline-block !important;
+  height: 1.35em !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  color: #C8CCD6 !important;
+  background: transparent !important;
+  border-radius: 0 !important;
+  font-family: var(--brand-body) !important;
+  font-size: .88rem !important;
+  font-weight: 500 !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+  position: relative !important;
+  transition: color .25s var(--nav-ease) !important;
+}
+
+.blogs-page header.nav .nav-links a.roll:hover,
+.blogs-page header.nav .nav-links a.roll:hover span,
+.blogs-page header.nav .nav-links a.roll:hover::after,
+body#top header.nav .nav-links a.roll:hover,
+body#top header.nav .nav-links a.roll:hover span,
+body#top header.nav .nav-links a.roll:hover::after,
+.contact-page header.nav .nav-links a.roll:hover,
+.contact-page header.nav .nav-links a.roll:hover span,
+.contact-page header.nav .nav-links a.roll:hover::after,
+.blogs-page header.nav .nav-links a.roll:focus-visible,
+.blogs-page header.nav .nav-links a.roll:focus-visible span,
+.blogs-page header.nav .nav-links a.roll:focus-visible::after,
+body#top header.nav .nav-links a.roll:focus-visible,
+body#top header.nav .nav-links a.roll:focus-visible span,
+body#top header.nav .nav-links a.roll:focus-visible::after,
+.contact-page header.nav .nav-links a.roll:focus-visible,
+.contact-page header.nav .nav-links a.roll:focus-visible span,
+.contact-page header.nav .nav-links a.roll:focus-visible::after {
+  color: #E5162B !important;
+}
+
+.blogs-page header.nav .nav-links a.roll span,
+body#top header.nav .nav-links a.roll span,
+.contact-page header.nav .nav-links a.roll span {
+  display: block !important;
+  line-height: 1.35 !important;
+  transition: transform .45s var(--nav-ease) !important;
+}
+
+.blogs-page header.nav .nav-links a.roll::after,
+body#top header.nav .nav-links a.roll::after,
+.contact-page header.nav .nav-links a.roll::after {
+  content: attr(data-t) !important;
+  position: absolute !important;
+  inset: 0 0 auto !important;
+  width: 100% !important;
+  height: 100% !important;
+  color: #E5162B !important;
+  opacity: 0 !important;
+  transform: translateY(100%) !important;
+  transition: transform .45s var(--nav-ease), opacity .2s ease !important;
+}
+
+.blogs-page header.nav .nav-links a.roll:hover span,
+body#top header.nav .nav-links a.roll:hover span,
+.contact-page header.nav .nav-links a.roll:hover span,
+.blogs-page header.nav .nav-links a.roll:focus-visible span,
+body#top header.nav .nav-links a.roll:focus-visible span,
+.contact-page header.nav .nav-links a.roll:focus-visible span {
+  transform: translateY(-100%) !important;
+}
+
+.blogs-page header.nav .nav-links a.roll:hover::after,
+body#top header.nav .nav-links a.roll:hover::after,
+.contact-page header.nav .nav-links a.roll:hover::after,
+.blogs-page header.nav .nav-links a.roll:focus-visible::after,
+body#top header.nav .nav-links a.roll:focus-visible::after,
+.contact-page header.nav .nav-links a.roll:focus-visible::after {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.blogs-page header.nav .nav-cta,
+body#top header.nav .nav-cta,
+.contact-page header.nav .nav-cta {
+  flex: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: .75rem 1.4rem !important;
+  border-radius: 99px !important;
+  background: #E5162B !important;
+  color: #fff !important;
+  font-family: var(--brand-body) !important;
+  font-size: .85rem !important;
+  font-weight: 600 !important;
+  white-space: nowrap !important;
+}
+
+.blogs-page header.nav .burger,
+body#top header.nav .burger,
+.contact-page header.nav .burger {
+  display: none !important;
+}
+
+@media (max-width: 1100px) {
+  .blogs-page header.nav .nav-links,
+  .blogs-page header.nav .nav-cta,
+  body#top header.nav .nav-links,
+  body#top header.nav .nav-cta,
+  .contact-page header.nav .nav-links,
+  .contact-page header.nav .nav-cta {
+    display: none !important;
+  }
+
+  .blogs-page header.nav .burger,
+  body#top header.nav .burger,
+  .contact-page header.nav .burger {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 0 0 44px !important;
+  }
+
+  .blogs-page header.nav .nav-in,
+  body#top header.nav .nav-in,
+  .contact-page header.nav .nav-in {
+    padding-inline: clamp(1rem, 3vw, 1.4rem) !important;
+  }
+
+  .blogs-page header.nav.scrolled .nav-in,
+  body#top header.nav.scrolled .nav-in,
+  .contact-page header.nav.scrolled .nav-in {
+    max-width: 94% !important;
+    padding-inline: 1rem !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .blogs-page header.nav .nav-logo img,
+  body#top header.nav .nav-logo img,
+  .contact-page header.nav .nav-logo img {
+    height: 30px !important;
+    max-height: 30px !important;
+  }
+
+  .blogs-page header.nav .nav-in,
+  body#top header.nav .nav-in,
+  .contact-page header.nav .nav-in {
+    height: 64px !important;
+  }
+}
+

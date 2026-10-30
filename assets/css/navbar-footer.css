@@ -1659,3 +1659,36 @@ body#top header#nav .nav-links a.roll::after {
   background: transparent !important;
   text-shadow: none !important;
 }
+
+
+/* GLOBAL HEADER HOVER — identical red roll effect on EVERY page */
+header#nav .nav-links a.roll:hover,
+header#nav .nav-links a.roll:focus-visible,
+header#nav .nav-links a.roll:hover span,
+header#nav .nav-links a.roll:focus-visible span,
+header#nav .nav-links a.roll:hover::after,
+header#nav .nav-links a.roll:focus-visible::after {
+  color: #E5162B !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+}
+
+header#nav .nav-links a.roll::after {
+  color: #E5162B !important;
+  background: transparent !important;
+}
+
+header#nav .nav-links a.roll:hover span,
+header#nav .nav-links a.roll:focus-visible span {
+  transform: translateY(-100%) !important;
+}
+
+header#nav .nav-links a.roll:hover::after,
+header#nav .nav-links a.roll:focus-visible::after {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

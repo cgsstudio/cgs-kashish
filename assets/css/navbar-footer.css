@@ -1720,3 +1720,14 @@ header#nav .nav-links a.roll:focus-visible::after {
   opacity: 0 !important;
   transform: none !important;
 }
+
+
+/* SERVICE PAGE MOBILE MENU: hide the header's logo while drawer is open.
+   The drawer already displays its own logo via .mnav::before. */
+@media (max-width: 1100px) {
+  body.service-page-body.menu-open #nav .nav-logo {
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+}

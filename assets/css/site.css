@@ -5150,3 +5150,17 @@ a.roll.nav-parent .nav-caret {
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
+
+/* Testimonial quote icon asset sizing */
+.tq {
+  display: block;
+  height: 2.2rem;
+  line-height: 1;
+}
+.tq img {
+  display: block;
+  width: 40px;
+  height: 35px;
+  object-fit: contain;
+}

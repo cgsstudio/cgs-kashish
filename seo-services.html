@@ -905,6 +905,31 @@ ul,ol{padding:0;list-style:none}
 }
 </script>
   <link rel="stylesheet" href="/assets/css/navbar-footer.css?v=20261030-header-footer">
+
+<style id="seo-tool-logo-styles">
+/* SEO tools strip — visible brand favicons with readable labels */
+.tools-in{align-items:flex-start;justify-content:flex-start;gap:1rem 2rem}
+.tools p{flex:0 0 100%;max-width:none;margin:0}
+.tool-chips{display:flex;flex-wrap:wrap;align-items:center;gap:.7rem;width:100%;padding:0;margin:0;list-style:none}
+.tool-chips .tool-chip{
+  display:inline-flex;align-items:center;justify-content:flex-start;gap:.65rem;
+  min-height:48px;padding:.65rem 1rem;border:1px solid rgba(255,255,255,.16);
+  border-radius:12px;background:rgba(255,255,255,.055);color:#f4f5f7;
+  font:500 .82rem/1.2 var(--mono);letter-spacing:.01em;white-space:nowrap;
+  transition:background .25s ease,border-color .25s ease,transform .25s ease;
+}
+.tool-chips .tool-chip:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.32);transform:translateY(-2px);color:#fff}
+.tool-logo{display:grid;place-items:center;flex:0 0 28px;width:28px;height:28px;border-radius:7px;background:#fff;overflow:hidden}
+.tool-logo img{display:block;width:22px;height:22px;object-fit:contain}
+@media(max-width:640px){
+ .tools-in{gap:1rem}
+ .tool-chips{gap:.55rem}
+ .tool-chips .tool-chip{min-height:44px;padding:.55rem .75rem;font-size:.74rem;gap:.5rem}
+ .tool-logo{width:25px;height:25px;flex-basis:25px}
+ .tool-logo img{width:20px;height:20px}
+}
+</style>
+
 </head>
 <body>
 <div class="progress" aria-hidden="true"><i id="progBar"></i></div>
@@ -1045,10 +1070,19 @@ ul,ol{padding:0;list-style:none}
   <section class="tools" aria-label="Tools and platforms we use">
     <div class="wrap tools-in">
       <p>Audited and tracked in the tools your team already trusts</p>
-      <ul class="tool-chips">
-        <li>Google Search Console</li><li>GA4</li><li>Ahrefs</li><li>Semrush</li>
-        <li>Screaming Frog</li><li>Sitebulb</li><li>Looker Studio</li><li>Surfer SEO</li>
-        <li>PageSpeed Insights</li><li>ChatGPT · Gemini · Perplexity</li>
+      <ul class="tool-chips" aria-label="SEO and AI tools">
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=search.google.com&amp;sz=128" alt="Google Search Console logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Google Search Console</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=analytics.google.com&amp;sz=128" alt="Google Analytics 4 logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>GA4</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=ahrefs.com&amp;sz=128" alt="Ahrefs logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Ahrefs</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=semrush.com&amp;sz=128" alt="Semrush logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Semrush</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=screamingfrog.co.uk&amp;sz=128" alt="Screaming Frog logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Screaming Frog</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=sitebulb.com&amp;sz=128" alt="Sitebulb logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Sitebulb</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=lookerstudio.google.com&amp;sz=128" alt="Looker Studio logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Looker Studio</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=surferseo.com&amp;sz=128" alt="Surfer SEO logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Surfer SEO</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=pagespeed.web.dev&amp;sz=128" alt="PageSpeed Insights logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>PageSpeed Insights</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=chatgpt.com&amp;sz=128" alt="ChatGPT logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>ChatGPT</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&amp;sz=128" alt="Google Gemini logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Gemini</span></li>
+        <li class="tool-chip"><span class="tool-logo"><img src="https://www.google.com/s2/favicons?domain=perplexity.ai&amp;sz=128" alt="Perplexity logo" loading="lazy" decoding="async" referrerpolicy="no-referrer"></span><span>Perplexity</span></li>
       </ul>
     </div>
   </section>

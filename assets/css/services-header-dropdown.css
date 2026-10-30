@@ -1,0 +1,72 @@
+/* Desktop Services dropdown in header */
+
+@media (min-width: 992px) {
+  .site-menu-main .nav-item.dropdown {
+    position: relative;
+  }
+
+  .mega-menu-master.cgs-services-dropdown {
+    position: absolute;
+    top: calc(80% + 3px);
+    left: 50%;
+    width: min(300px, 92vw);
+    min-height: 0;
+    max-height: none;
+    overflow: visible;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateX(-50%) translateY(10px);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+    background: #0a0a0a;
+    border: 1px solid rgba(253, 253, 225, 0.12);
+    border-radius: 14px;
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.55);
+    z-index: 10050;
+    display: block !important;
+  }
+
+  .nav-item.dropdown:hover .mega-menu-master.cgs-services-dropdown,
+  .nav-item.dropdown.header-dropdown-open .mega-menu-master.cgs-services-dropdown {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .cgs-services-dropdown-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px;
+  }
+
+  .cgs-service-dropdown-item {
+    display: block;
+    padding: 11px 14px;
+    border-radius: 10px;
+    color: #fdfde1;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .cgs-service-dropdown-item:hover,
+  .cgs-service-dropdown-item.active {
+    background: rgba(255, 0, 0, 0.14);
+    color: #ff3b3b;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .mega-menu-master.cgs-services-dropdown {
+    display: none !important;
+  }
+
+  .mobile-service-link.active {
+    color: #ff3b3b !important;
+    background: rgba(255, 0, 0, 0.12);
+  }
+}

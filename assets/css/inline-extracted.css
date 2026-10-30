@@ -1,0 +1,72 @@
+/* Consolidated inline CSS extracted from HTML files */
+
+/* Base / root styles */
+html, body { height: 100%; }
+body { margin: 0; background: #000000; font-family: 'Montserrat', sans-serif; }
+body.about-page,
+body.service-page-body,
+body.contact-page-body { font-family: 'Montserrat', sans-serif; }
+/* #root { min-height: 100vh; } */
+
+/* Header / navigation overrides (originally inlined) */
+header.aximo-header-section.dark-bg { background-color: #000000 !important; border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+.site-menu-main .nav-link-item, .site-menu-main .nav-link-item.active, .site-menu-main .nav-link-item:hover, .site-menu-main .nav-link-item:focus, .site-menu-main .nav-link-item span svg, .site-menu-main .nav-link-item.active span svg, .site-menu-main .nav-link-item:hover span svg, body #root .site-menu-main .nav-link-item, body #root .site-menu-main .nav-link-item.active, body #root .site-menu-main .nav-link-item:hover, body #root .site-menu-main .nav-link-item:focus, body #root .site-menu-main .nav-link-item span svg, body #root .site-menu-main .nav-link-item.active span svg, body #root .site-menu-main .nav-link-item:hover span svg, body .site-header .site-menu-main .nav-link-item.active, body .site-header .site-menu-main .nav-link-item:hover { color: #ffffff !important; }
+@media (min-width: 992px) {
+  .mobile-contact-info, .mobile-social-info, .mobile-menu-head, .go-back, .mobile-menu-close { display: none !important; }
+  .site-navbar { display: flex !important; align-items: center !important; justify-content: space-between !important; height: 90px !important; padding: 0 20px !important; }
+  .menu-block-wrapper { display: flex !important; align-items: center !important; justify-content: center !important; flex-grow: 1 !important; }
+  .menu-block { display: flex !important; align-items: center !important; justify-content: center !important; background: transparent !important; position: relative !important; width: auto !important; height: auto !important; transform: none !important; opacity: 1 !important; visibility: visible !important; overflow: visible !important; z-index: 1 !important; }
+  .site-menu-main { display: flex !important; flex-direction: row !important; align-items: center !important; justify-content: center !important; gap: 32px !important; list-style: none !important; margin: 0 !important; padding: 0 !important; }
+  .site-menu-main .nav-item { margin: 0 !important; padding: 0 !important; border-bottom: none !important; }
+  .site-menu-main .nav-link-item { color: #ffffff !important; font-size: 15px !important; font-weight: 600 !important; letter-spacing: 0.3px !important; text-decoration: none !important; padding: 8px 0 !important; transition: color 0.25s ease !important; text-transform: capitalize !important; display: inline-flex !important; align-items: center !important; gap: 6px !important; }
+  .nav-service-link { cursor: pointer; display: inline-flex !important; justify-content: space-between !important; align-items: center !important; gap: 6px !important; }
+  .nav-service-icon { display: inline-flex !important; align-items: center !important; font-size: 12px !important; color: inherit !important; transform: rotate(0deg); transition: transform 0.3s ease !important; }
+  .header-action-btn { background-color: #ff0000 !important; color: #fdfde1 !important; padding: 10px 24px !important; border-radius: 50px !important; text-decoration: none !important; font-weight: 700 !important; font-size: 15px !important; transition: all 0.3s ease !important; border: 2px solid #ff0000 !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; }
+  .header-action-btn:hover { background-color: transparent !important; color: #ff0000 !important; }
+  .breadcrumb-icon { color: rgb(253, 253, 225) !important; display: inline-block !important; vertical-align: middle !important; margin: 0 4px !important; }
+  .breadcrumbs a { color: rgba(253, 253, 225, 0.8) !important; text-decoration: none !important; transition: color 0.3s ease !important; }
+  .breadcrumbs a:hover { color: #ff0000 !important; }
+}
+
+/* Dark / premium about page styles */
+.dark-premium-section { background-color: #050000 !important; color: #b0b0b0 !important; position: relative; overflow: hidden; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.dark-premium-section h2, .dark-premium-section h3, .dark-premium-section h4 { color: #fdfde1 !important; }
+.dark-premium-section p { color: #b0b0b0 !important; }
+.cgs-glow-1, .cgs-glow-2 { position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255,0,0,0.1) 0%, transparent 70%); filter: blur(50px); z-index: 0; pointer-events: none; }
+.cgs-glow-1 { top: -100px; left: -100px; }
+.cgs-glow-2 { bottom: -100px; right: -100px; }
+.glass-card-premium { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(10px); transition: all 0.4s ease; position: relative; overflow: hidden; }
+.glass-card-premium::before { content: ''; position: absolute; top: 0; left: -100%; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #ff0000, transparent); transition: all 0.5s ease; }
+.glass-card-premium:hover::before { left: 100%; }
+.glass-card-premium:hover { transform: translateY(-5px); border-color: rgba(255,0,0,0.3); box-shadow: 0 10px 30px rgba(255,0,0,0.15); }
+
+/* About section specific */
+.about-section { padding: 50px 0; background-color: #050000; position: relative; overflow: hidden; }
+.about-img-container { position: relative; z-index: 2; }
+.about-img-box { background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%); aspect-ratio: 1 / 1; border-radius: 32px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+.about-main-img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.about-img-box:hover .about-main-img { transform: scale(1.05); }
+.glow-circle { position: absolute; width: 200px; height: 200px; background: radial-gradient(circle, rgba(255,0,0,0.15) 0%, transparent 70%); filter: blur(40px); z-index: 1; }
+.about-content-col { padding-left: 40px; }
+.about-label-pill { background-color: rgba(255,0,0,0.15); border: 1px solid rgba(255,0,0,0.3); border-radius: 30px; padding: 8px 20px; color: #ff0000 !important; font-size: 13px; font-weight: 700; display: inline-flex; align-items: center; gap: 10px; text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 25px; }
+.about-main-title { font-family: 'Montserrat', sans-serif; font-size: 40px; font-weight: 800; color: #fdfde1; line-height: 1.2; margin-bottom: 25px; }
+.about-desc { color: #b0b0b0; font-size: 18px; line-height: 1.7; margin-bottom: 35px; }
+.about-stats-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 30px; margin-bottom: 40px; }
+.faq-premium-wrap { max-width: 800px; margin: 0 auto; }
+.faq-premium-item { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.05); border-radius: 12px; margin-bottom: 16px; overflow: hidden; transition: all 0.3s ease; display: flex; align-items: flex-start; padding: 24px; }
+
+/* Reveal / animation helpers */
+.reveal-up { opacity: 0; transform: translateY(40px); transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94); }
+.reveal-up.visible { opacity: 1; transform: translateY(0); }
+.gradient-text-red { background: linear-gradient(90deg, #ff0000, #ff4d4d, #ff0000); background-size: 200% auto; -webkit-background-clip: text; -webkit-text-fill-color: transparent; animation: gradient-flow 3s linear infinite; }
+@keyframes gradient-flow { 0% { background-position: 0% center; } 100% { background-position: 200% center; } }
+
+/* Utility tweaks appearing inline across pages */
+.premium-image-wrapper { position: relative; border-radius: 20px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.6); transform: perspective(1000px) rotateY(-5deg); transition: all 0.5s ease; border: 1px solid rgba(255,255,255,0.1); }
+.premium-image-wrapper:hover { transform: perspective(1000px) rotateY(0deg); border-color: rgba(255,0,0,0.3); box-shadow: 0 30px 60px rgba(255,0,0,0.2); }
+
+/* responsive adjustments copied from inline styles */
+@media (max-width: 991px) { .premium-subpage-hero { min-height: auto; padding: 120px 0 72px !important; } .premium-hero-copy { font-size: 17px; } .about-premium-strip { grid-template-columns: 1fr; } }
+@media (max-width: 575px) { .aximo-breadcrumb-title { font-size: 42px !important; } .premium-hero-metric { width: 100%; } }
+
+/* End of consolidated inline CSS */

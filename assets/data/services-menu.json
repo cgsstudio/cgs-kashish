@@ -1,0 +1,230 @@
+[
+  {
+    "id": "web",
+    "title": "Website Development",
+    "href": "/services/web-development/",
+    "file": "services/web-development/index.html",
+    "links": [
+      {
+        "href": "/services/web-development/html-css-development-company",
+        "label": "HTML/CSS"
+      },
+      {
+        "href": "/services/web-development/custom-html-website-design-company",
+        "label": "Custom HTML Website Design"
+      },
+      {
+        "href": "/services/web-development/template-customization-company",
+        "label": "Template Customization"
+      },
+      {
+        "href": "/services/web-development/responsive-web-design-company",
+        "label": "Responsive Web Design"
+      },
+      {
+        "href": "/services/web-development/cross-browser-compatibility-testing-company",
+        "label": "Cross-Browser Compatibility Testing"
+      },
+      {
+        "href": "/services/web-development/website-redesign-and-revamp-company",
+        "label": "Website Redesign and Revamp"
+      },
+      {
+        "href": "/services/web-development/webflow-development-company",
+        "label": "Webflow"
+      },
+      {
+        "href": "/services/web-development/wordpress-development-company",
+        "label": "WordPress"
+      },
+      {
+        "href": "/services/web-development/shopify-development-company",
+        "label": "Shopify"
+      },
+      {
+        "href": "/services/web-development/react-js-development-company",
+        "label": "React.js"
+      },
+      {
+        "href": "/services/web-development/custom-reactjs-web-application-development-company",
+        "label": "Custom React.js Web Application Development"
+      },
+      {
+        "href": "/services/web-development/reactjs-mobile-app-development-company",
+        "label": "React.js Mobile App Development"
+      }
+    ]
+  },
+  {
+    "id": "graphic",
+    "title": "Graphics Design",
+    "href": "/services/graphic-design/",
+    "file": "services/graphic-design/index.html",
+    "links": [
+      {
+        "href": "/services/graphic-design/logo-design-company",
+        "label": "Logo Design"
+      },
+      {
+        "href": "/services/graphic-design/branding-and-identity-design-agency",
+        "label": "Branding and Identity Design"
+      },
+      {
+        "href": "/services/graphic-design/social-media-banner-design",
+        "label": "Social Media Banner Design"
+      },
+      {
+        "href": "/services/graphic-design/flyer-design-services",
+        "label": "Flyer Design"
+      },
+      {
+        "href": "/services/graphic-design/brochure-design-company",
+        "label": "Brochure Design"
+      },
+      {
+        "href": "/services/graphic-design/poster-design-services",
+        "label": "Poster Design"
+      },
+      {
+        "href": "/services/graphic-design/hoarding-design-services",
+        "label": "Hoarding Design"
+      },
+      {
+        "href": "/services/graphic-design/packaging-design-agency",
+        "label": "Packaging Design"
+      },
+      {
+        "href": "/services/graphic-design/advertising-design-agency",
+        "label": "Advertising Design"
+      },
+      {
+        "href": "/services/graphic-design/newsletter-design-service",
+        "label": "Newsletter Design"
+      },
+      {
+        "href": "/services/graphic-design/infographic-design-services",
+        "label": "Infographic Design"
+      },
+      {
+        "href": "/services/graphic-design/visiting-card-design-service",
+        "label": "Business Card Design"
+      },
+      {
+        "href": "/services/graphic-design/presentation-design-services",
+        "label": "Presentation Design"
+      },
+      {
+        "href": "/services/graphic-design/magazine-and-booklet-design",
+        "label": "Magazine and Booklet Design"
+      },
+      {
+        "href": "/services/graphic-design/custom-illustration-design",
+        "label": "Custom Illustration Design"
+      },
+      {
+        "href": "/services/graphic-design/event-invitation-design",
+        "label": "Event Invitation Design"
+      },
+      {
+        "href": "/services/graphic-design/menu-design-service",
+        "label": "Menu Design"
+      },
+      {
+        "href": "/services/graphic-design/signage-design-service",
+        "label": "Signage Design"
+      },
+      {
+        "href": "/services/graphic-design/corporate-profile-design",
+        "label": "Corporate Profile Design"
+      },
+      {
+        "href": "/services/graphic-design/annual-report-design-agency",
+        "label": "Annual Report Design"
+      },
+      {
+        "href": "/services/graphic-design/digital-ad-design-agency",
+        "label": "Digital Ad Design"
+      },
+      {
+        "href": "/services/graphic-design/exhibition-booth-design",
+        "label": "Trade Show Booth Design"
+      },
+      {
+        "href": "/services/graphic-design/motion-graphics-design-agency",
+        "label": "Motion Graphics Design"
+      },
+      {
+        "href": "/services/graphic-design/e-book-design-service",
+        "label": "E-book Design"
+      }
+    ]
+  },
+  {
+    "id": "uiux",
+    "title": "UI/UX Design",
+    "href": "/services/ui-ux-design/",
+    "file": "services/ui-ux-design/index.html",
+    "links": [
+      {
+        "href": "/services/ui-ux-design/website-ui-ux-design-company",
+        "label": "Website UI/UX Design"
+      },
+      {
+        "href": "/services/ui-ux-design/ios-ui-ux-design-company",
+        "label": "iOS UI/UX Design"
+      },
+      {
+        "href": "/services/ui-ux-design/android-ui-ux-design-company",
+        "label": "Android UI/UX Design"
+      },
+      {
+        "href": "/services/ui-ux-design/backend-ui-ux-design-company",
+        "label": "Backend UI/UX Design"
+      },
+      {
+        "href": "/services/ui-ux-design/erp-ui-ux-design-company",
+        "label": "ERP UI/UX Design"
+      }
+    ]
+  },
+  {
+    "id": "digital",
+    "title": "Digital Marketing",
+    "href": "/services/digital-marketing/",
+    "file": "services/digital-marketing/index.html",
+    "links": [
+      {
+        "href": "/services/digital-marketing/digital-marketing-company",
+        "label": "Digital Marketing"
+      },
+      {
+        "href": "/services/digital-marketing/seo-company-in-ahmedabad",
+        "label": "SEO Company"
+      },
+      {
+        "href": "/services/digital-marketing/seo-agency-in-ahmedabad",
+        "label": "SEO Agency"
+      },
+      {
+        "href": "/services/digital-marketing/social-media-marketing-agency",
+        "label": "Social Media Marketing Agency"
+      },
+      {
+        "href": "/services/digital-marketing/social-media-marketing",
+        "label": "Social Media Marketing"
+      },
+      {
+        "href": "/services/digital-marketing/email-marketing-service",
+        "label": "Email Marketing"
+      },
+      {
+        "href": "/services/digital-marketing/google-ads-service",
+        "label": "Google Ads"
+      },
+      {
+        "href": "/services/digital-marketing/meta-ads-service",
+        "label": "Meta Ads"
+      }
+    ]
+  }
+]

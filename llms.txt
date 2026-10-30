@@ -1,0 +1,194 @@
+# Chameleo GFX Studio
+
+> Chameleo GFX Studio is a full-service web design and digital marketing agency based in Ahmedabad, India, serving clients across India, the USA, UK, Canada, UAE, and Australia. Founded in 2020, the agency delivers branding, UI/UX design, web development, SEO, digital marketing, AI automation, and paid advertising in-house under one team, and offers white-label services for other agencies.
+
+Chameleo GFX Studio is led by Co-Founder & CEO Niraj Mandaliya (brand building, business expansion, design leadership) and Co-Founder & CFO Dhiraj Ahuja (growth, financial strategy, digital innovation). The team has delivered 100+ projects across FinTech, SaaS, AI, mining, ecommerce, healthcare, real estate, astrology, education, manufacturing, and professional services. The agency positions itself for both traditional search (SEO) and AI answer engines (AEO/GEO).
+
+Chameleo GFX Studio is a future-ready agency built for brands that want to grow with AI, innovation, and modern technology. The team combines creative thinking with strategic execution focusing not just on visuals, but on how real users think, how search engines evolve, and how AI-driven tools are shaping the future of digital businesses. Every project is planned with performance, security, and growth in mind.
+
+
+## Pages
+
+- [Home](https://chameleogfxstudio.com/): Main landing page introducing services, approach, and brand identity of Chameleo GFX Studio.
+- [Services](https://chameleogfxstudio.com/#services): Full list of creative, development, and marketing services offered.
+- [Portfolio](https://chameleogfxstudio.com/#cases): Showcase of completed projects including logos, websites, branding, and digital campaigns.
+- [Process](https://chameleogfxstudio.com/#process): Five-step workflow: Discover, Strategize, Design and Build, Launch, Grow and Optimize.
+- [Industries We Serve](https://chameleogfxstudio.com/#industries): FinTech, SaaS, AI, Mining, Ecommerce, Healthcare, Real Estate, Astrology, Education, Manufacturing, Professional Services, Startups.
+- [About](https://chameleogfxstudio.com/about/): Company background, philosophy, and team expertise (11+ years combined).
+- [Team](https://chameleogfxstudio.com/#team): Profiles of Niraj Mandaliya (CEO) and Dhiraj Ahuja (CFO).
+- [Blogs](https://chameleogfxstudio.com/blogs): Guides and insights on AI marketing, ChatGPT advertising, AI search optimization, and web development.
+- [Contact](https://chameleogfxstudio.com/contact/): Book a free 30-minute strategy call; email info@chameleogfxstudio.com; phone +91-973-747-2636 / +91-846-038-4838; address F-1001, F Block, PNTC, Times Of India Press Rd, Ahmedabad, Gujarat 380015.
+
+## Guides and Blog Articles
+
+- [AI Can Build Your Website in Minutes. Can It Build One That Sells?](https://chameleogfxstudio.com/blogs/ai-website-development-that-sells): AI can launch a site in minutes, but conversions need strategy, trust, and UX. See what AI builders do well, where they fall short, and how to improve results.
+- [Why Your Website Isn't Being Cited by AI](https://chameleogfxstudio.com/blogs/website-not-being-cited-by-ai): Learn why AI citations matter and how to improve your AI search visibility across ChatGPT, Google AI Overviews, Perplexity, and Copilot.
+- [Advertise in ChatGPT: The Complete Guide to ChatGPT Advertising for Businesses in 2026](https://chameleogfxstudio.com/blogs/advertise-in-chatgpt-the-complete-guide): A comprehensive breakdown of ChatGPT Ads, pricing models (CPM/CPC), conversational intent marketing, and campaign strategies.
+- [How to Audit Your Website for AI Answer Engines](https://chameleogfxstudio.com/blogs/how-to-audit-website-ai-answer-engines): Step-by-step framework to optimize for Google AI Overviews, Perplexity, and Gemini.
+- [How to Build an AI Assistant: Beginner's Guide](https://chameleogfxstudio.com/blogs/how-to-build-an-ai-assistant-beginners-guide): Practical guide to LLMs, API integrations, and building custom assistants.
+
+## Services Pages
+
+- [Graphic and Branding Design](https://chameleogfxstudio.com/#services): Logos, brand guidelines, visual systems, and marketing collateral.
+- [UI/UX Design](https://chameleogfxstudio.com/#services): Research-led wireframes, polished UI, and tested user journeys for web and mobile apps.
+- [Web Development](https://chameleogfxstudio.com/#services): Fast, secure, scalable, mobile-first websites and web apps.
+- [SEO (Search Engine Optimization)](https://chameleogfxstudio.com/#services): Technical SEO, on-page optimization, content strategy, and AEO/GEO for Google and AI answer engines.
+- [Digital Marketing](https://chameleogfxstudio.com/#services): Full-funnel strategy across social, content, and email.
+- [AI Automation](https://chameleogfxstudio.com/#services): Tool integrations, follow-up automation, AI chat, and lead-routing workflows.
+- [Google Ads and Meta Ads](https://chameleogfxstudio.com/#services): Performance ad campaigns focused on cost per lead.
+- [White-Label Services](https://chameleogfxstudio.com/#services): Design, development, and marketing delivered under partner agencies' own brand.
+
+## Services
+
+### Graphic Design
+- Logo Design (Premium custom logos for brands)
+- Brand Identity Design
+- Social Media Banner Design
+- Brochure & Print Design
+- Packaging Design
+
+### UI/UX Design
+- Website UI Design
+- Mobile App UI/UX Design
+- Wireframing & Prototyping
+- Figma Design
+- User Experience Consulting
+
+### Web Design & Development
+- Custom Website Design
+- WordPress Development
+- Figma to WordPress
+- PSD to WordPress
+- Adobe XD to WordPress
+- Theme Customization
+- Landing Page Design
+- Fully Responsive Design
+- E-Commerce Development
+- PHP & HTML Development
+
+### Digital Marketing
+- Search Engine Optimization (SEO)
+  - Keyword Research & Optimization
+  - On-Page SEO Optimization
+  - Off-Page SEO Optimization
+  - Technical SEO
+  - Local SEO
+  - Quality Backlink Building
+- Answer Engine Optimization (AEO)
+- Generative Engine Optimization (GEO)
+- Social Media Marketing (SMM)
+- Google Ads / PPC Campaigns
+- Content Marketing
+- Email Marketing
+
+## About the Company
+
+**Founded:** 2020
+**Type:** Creative Design, Development & Digital Marketing Agency
+**Location:** Ahmedabad, Gujarat, India
+**Team:** Designers, Developers, and Digital Strategists
+**Work Culture:** 5-day work week, collaborative and innovation-first environment
+**Approach:** Innovation-first, customer-centric, no one-size-fits-all solutions
+
+Chameleo GFX Studio does not offer cookie-cutter solutions. Instead, they design smart, tailored strategies aligned with each client's unique business goals. The team ensures every project is delivered on time while exceeding both creative and technical expectations.
+
+## Contact Information
+
+- **Website:** https://chameleogfxstudio.com/
+- **Email:** info@chameleogfxstudio.com
+- **Career Email:** career@chameleogfxstudio.com
+- **Phone:** +91 8460384838
+- **WhatsApp:** +91 9737472636
+- **Address:** F-1001, F Block, PNTC, Times Of India Press Rd, Rajmani Society, Satellite, Shyamal, Ahmedabad, Gujarat 380015, India
+- "Google Map" https://maps.app.goo.gl/jQ6zwpa31cQu9fVV7
+
+## Social Media Profiles
+
+- **Facebook:** https://www.facebook.com/chameleogfxstudio
+- **Instagram:** https://www.instagram.com/chameleogfxstudio/
+- **LinkedIn:** https://www.linkedin.com/company/chameleogfxstudio/
+- **Behance:** https://www.behance.net/nirajmandaliya
+- **Pinterest:** https://in.pinterest.com/chameleogfxstudio/
+- **Youtube:** https://www.youtube.com/@chameleogfxstudio
+
+
+## Case Studies
+
+- [Cyber Vantage](https://cybervantage.ai/): Brand and website for an AI-driven cybersecurity company.
+- [Jagatjit Industry](https://www.jagatjit.com/): Corporate website for an established industrial group.
+- [Tools Competition] (https://tools-competition.org/): A clear digital home that supports global participation and lends the program credibility.
+- [Defi Designs](https://defidesigns.io/): Brand and website for a DeFi-focused design studio.
+- [Premier Properties](https://premierpropertiesandco.com/): Conversion-focused property listing website.
+- [Luxury Rentfolio](https://luxuryrentfolio.com/): Premium booking experience for a luxury rentals brand.
+
+
+## Policies
+
+- [Privacy Policy](https://chameleogfxstudio.com/privacy-policy.html)
+- [Terms & Conditions](https://chameleogfxstudio.com/terms.html)
+- [Disclaimer](https://chameleogfxstudio.com/disclaimer.html)
+- [Refund Policy](https://chameleogfxstudio.com/refund-policy.html)
+
+## Third-Party Profiles & Reviews
+
+- [Trustpilot Reviews](https://www.trustpilot.com/review/chameleogfxstudio.com): Client reviews and ratings.
+- [Google Reviews](https://g.page/r/CeTVJ5LvBhuzEAE/review): Verifiable client feedback.
+- [Clutch Profile](https://clutch.co/profile/chameleo-gfx-studio): Verified agency profile and reviews.
+- [GoodFirms] (https://goodfirms.co/company/chameleogfx-studio)
+- [DesignRush] (https://www.designrush.com/agency/profile/chameleo-gfx-studio)
+- [TechBehemoths] (https://techbehemoths.com/company/chameleo-gfx-studio)
+- [TopDevelopers] ( https://www.topdevelopers.co/profile/chameleo-gfx-studio)
+- [Justdial Listing](https://www.justdial.com/Ahmedabad/Chameleo-Gfx-Studio-Near-Times-Of-India-Press-Prahladnagar/079PXX79-XX79-221121223104-I3L1_BZDET): Local business listing.
+
+
+## Key Technologies & Tools
+
+- WordPress, PHP, HTML, CSS, JavaScript
+- Elementor, WooCommerce
+- Figma, Adobe XD, Adobe Photoshop, Adobe Illustrator
+- Google Ads, Google Analytics, Google Search Console
+- SEO Tools (On-Page, Off-Page, Technical, Local SEO)
+
+## Notable Clients & Testimonials
+
+- **Hocco Ice Cream** "Chameleo GFX Studio delivered outstanding brand design with a deep understanding of our vision. The team was proactive, highly responsive, and managed every revision with precision. Their professionalism and commitment to deadlines set them apart."
+- **Jagatjit Industries** "The website Chameleo built for Jagatjit Industries is visually captivating, technically flawless, and fully mobile-responsive. Since launch, we have seen a remarkable increase in distributor and partner inquiries globally."
+- **Cybervantage** "They built our cybersecurity platform website faster than we thought possible, without any compromise on quality. The team understood our requirements from day one. The attention to detail and animations are exceptional."
+- **Mr. Sprinkle** "We came to Chameleo with just an idea for Mr. Sprinkle Spices. They built the brand, the website, and the SEO strategy from scratch. Within months we were getting daily orders from people finding us on Google. Best investment made."
+- **Island Space** "Chameleo's creative team genuinely understands our space industry aesthetic. They deliver cutting-edge visuals on time, every time. Our brand recognition and customer engagement have improved significantly."
+
+
+## FAQs
+
+**What services does Chameleo GFX Studio offer?**
+Chameleo GFX Studio is a full-service digital studio offering graphic and branding design, UI/UX design, web development, SEO, digital marketing, AI automation, Google and Meta Ads, and white-label services for agencies. Everything is delivered in-house by one team.
+
+**Which countries does Chameleo work with?**
+We work with clients across India, the USA, UK, Canada, UAE, and Australia. Our process is fully remote-friendly, so location is never a barrier.
+
+**How much does a project cost?**
+Pricing depends on scope. A simple landing page, a full brand identity, and an ongoing marketing engagement are very different investments. Book a free strategy call and we will give you a clear, honest quote with no obligation.
+
+**How long does a typical project take?**
+Most websites take 2 to 6 weeks depending on size and complexity. Branding projects often run 1 to 3 weeks. We give you a firm timeline before we start, not a vague estimate.
+
+**Do you offer white-label services for other agencies?**
+Yes. Agencies and consultants partner with us to deliver design, development, and marketing under their own brand. You scale your output without scaling your team.
+
+**Can you handle both design and marketing, or just one?**
+Both, and that is the point. Because branding, web, and marketing live under one roof, your brand stays consistent and your results improve. You can also engage us for a single service if that is what you need.
+
+**What makes Chameleo different from other agencies?**
+We are an in-house, full-stack team measured by outcomes, not deliverables. You get senior-level work, fast turnaround, search and AI visibility built in, and a track record since 2020 across six countries.
+
+**How do I get started?**
+Book a free 30-minute strategy call. We will review your goals and give you a clear plan you can act on, whether you hire us or not. You can contact us on: +91-846-038-4838, +91-973-747-2636 or email us on info@chameleogfxstudio.com, sales@chameleogfxstudio.com
+
+## Optional: Full Content
+- [Home Page Full Content](https://chameleogfxstudio.com/llms-full.txt)
+
+## Sitemap
+- **Sitemap** https://chameleogfxstudio.com/sitemap.xml
+
+## Robots
+- **Robots** https://chameleogfxstudio.com/robots.txt

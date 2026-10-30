@@ -1,0 +1,215 @@
+
+Options -MultiViews
+RewriteEngine On
+RewriteBase /
+
+# Keep the shared SMTP credential file readable only by PHP includes.
+<Files "smtp-config.php">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</Files>
+
+# SEO: Explicitly allow search-engine indexing
+# Remove any inherited/server-level robots restriction and send the correct directive.
+<IfModule mod_headers.c>
+    Header always unset X-Robots-Tag
+    Header always set X-Robots-Tag "index, follow"
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(webp|png|jpg|jpeg|svg|css|js|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+</IfModule>
+
+
+
+
+# 1. Redirect www to non-www
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# 2. Force HTTPS (if not already secure)
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# 3. Redirect /index.html to /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html [NC]
+RewriteRule ^index\.html$ https://chameleogfxstudio.com/ [L,R=301]
+
+# Use /career as the public URL and keep the pages folder private in the URL.
+RewriteRule ^cgs_home/career/?$ /career [R=301,L]
+RewriteCond %{THE_REQUEST} \s/+pages/career\.html(?:[?\s]) [NC]
+RewriteRule ^pages/career\.html$ /career [R=301,L,NC]
+RewriteRule ^pages/(about|contact)\.html$ /$1/ [R=301,L,NC]
+RewriteCond %{THE_REQUEST} \s/+career\.html(?:[?\s]) [NC]
+RewriteRule ^career\.html$ /career [R=301,L]
+RewriteRule ^career/?$ pages/career.html [L]
+
+# 4. Remove .html from URLs and map extensionless URLs to the real .html file
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.html\s [NC]
+RewriteRule ^ /%1/ [R=301,L]
+
+# Redirect the legacy root-level Meta Muse Spark URL to its blog URL.
+RewriteRule ^what-is-meta-muse-spark-vs-chatgpt-claude-gemini/?$ /blogs/what-is-meta-muse-spark-vs-chatgpt-claude-gemini [R=301,L]
+
+# Map specific extensionless URL for web-development-services (now in pages/ folder)
+RewriteRule ^web-development-services/?$ pages/web-development-services.html [L]
+
+
+# =========================================================================
+# 5. REDIRECT SPECIFIC OLD SERVICE URLS TO https://chameleogfxstudio.com/
+# =========================================================================
+
+# Main Services Pages
+Redirect 301 /services/ https://chameleogfxstudio.com/
+Redirect 301 /services https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design https://chameleogfxstudio.com/
+Redirect 301 "/services/graphic design" https://chameleogfxstudio.com/
+
+# UI / UX Design
+Redirect 301 /services/ui-ux-design/backend-ui-ux-design-company https://chameleogfxstudio.com/
+Redirect 301 "/services/ui ux design/backend ui ux design company" https://chameleogfxstudio.com/
+Redirect 301 /services/ui-ux-design/erp-ui-ux-design-company https://chameleogfxstudio.com/
+Redirect 301 "/services/ui ux design/erp ui ux design company" https://chameleogfxstudio.com/
+Redirect 301 /services/ui-ux-design/android-ui-ux-design-company https://chameleogfxstudio.com/
+Redirect 301 "/services/ui-ux-design/android-ui-ux-design-company" https://chameleogfxstudio.com/
+Redirect 301 /services/ui-ux-design/ios-ui-ux-design-company https://chameleogfxstudio.com/
+Redirect 301 "/services/ui-ux-design/ios-ui-ux-design-company" https://chameleogfxstudio.com/
+Redirect 301 /services/ui-ux-design/website-ui-ux-design-company https://chameleogfxstudio.com/
+
+# Web Development
+Redirect 301 /services/web-development/figma-to-webflow-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/template-customization-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/react-js-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/custom-html-website-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/html-to-webflow-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/html-to-react-services https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/reactjs-ui-ux-design-and-development-company https://chameleogfxstudio.com/
+Redirect 301 "/services/web development/reactjs ui ux design and development company" https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/shopify-theme-customization-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/wordpress-migration-and-upgrades-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/webflow-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/reactjs-performance-optimization-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/figma-to-react-services https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/html-to-shopify-services https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/shopify-app-integration-and-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/cross-browser-compatibility-testing-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/reactjs-mobile-app-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/wordpress-seo-optimization-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/woocommerce-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/woocommerce-development- https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/photoshop-to-shopify-services https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/photoshop-to-react-services https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/html-css-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/responsive-web-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/custom-webflow-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/custom-shopify-store-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/website-redesign-and-revamp-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/custom-wordpress-website-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/wordpress-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/webflow-integration-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/shopify-seo-optimization-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/photoshop-to-webflow-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/buddyboss-design-and-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/shopify-ecommerce-management-and-support-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/webflow-theme-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/custom-reactjs-web-application-development-company https://chameleogfxstudio.com/
+Redirect 301 /services/web-development/reactjs-component-development-and-integration-company https://chameleogfxstudio.com/
+
+# Graphic Design
+Redirect 301 /services/graphic-design/newsletter-design-service-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/exhibition-booth-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/branding-and-identity-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/custom-illustration-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/e-book-design-service-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/event-invitation-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/social-media-banner-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/signage-design-service-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/digital-ad-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/visiting-card-design-service-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/flyer-design-services-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/presentation-design-services-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/magazine-and-booklet-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/packaging-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/annual-report-design-agency https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/brochure-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/event-invitation-design https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/custom-illustration-design https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/infographic-design-services https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/exhibition-booth-design https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/hoarding-design-services-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/e-book-design-service https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/newsletter-design-service https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/advertising-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/motion-graphics-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/menu-design-service-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/poster-design-services-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/annual-report-design-agency-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/corporate-profile-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/social-media-banner-design https://chameleogfxstudio.com/
+Redirect 301 "/services/graphic design/social media banner design" https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/digital-ad-design-agency https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/logo-design-company https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/flyer-design-services https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/signage-design-service https://chameleogfxstudio.com/
+Redirect 301 "/services/graphic design/signage design service" https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/motion-graphics-design-agency https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/packaging-design-agency https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/hoarding-design-services https://chameleogfxstudio.com/
+Redirect 301 /services/graphic-design/branding-and-identity-design-agency https://chameleogfxstudio.com/
+Redirect 301 "/services/graphic design/branding and identity design agency" https://chameleogfxstudio.com/
+
+# Digital Marketing
+Redirect 301 /services/digital-marketing/seo-company https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/email-marketing-company https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/google-ads-management-agency https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/seo-agency https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/social-media-marketing-in-ahmedabad https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/seo-company-in-ahmedabad https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/social-media-marketing-agency https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/meta-ads-management-company https://chameleogfxstudio.com/
+Redirect 301 "/services/digital marketing/meta ads management company" https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/search-engine-optimization https://chameleogfxstudio.com/
+Redirect 301 /services/digital-marketing/meta-ads https://chameleogfxstudio.com/
+Redirect 301 "/services/digital marketing/meta ads" https://chameleogfxstudio.com/
+
+# =========================================================================
+
+# Redirect previous About and Contact URLs to their clean public URLs.
+RewriteRule ^about-us/?$ /about/ [R=301,L]
+RewriteRule ^contact-us/?$ /contact/ [R=301,L]
+
+# 5. Route clean URLs to the files in the 'pages' directory
+RewriteRule ^(about|contact|privacy-policy|terms|disclaimer|refund-policy|thank-you|web-development-services)/?$ pages/$1.html [L]
+
+# 6. Route clean URLs to the files in the 'blog' directory
+Redirect 301 /blogs/the-new-seo-problem-nobody-is-talking-about https://chameleogfxstudio.com/blogs/website-not-being-cited-by-ai
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blogs/([^/\.]+)/?$ blog/$1.html [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(website-not-being-cited-by-ai|how-to-build-an-ai-assistant-beginners-guide|how-to-get-your-brand-mentioned-in-ai-search-results)/?$ blog/$1.html [L]
+
+# 7. Route clean URL for blogs listing page
+RewriteRule ^blogs/?$ blogs.html [L]

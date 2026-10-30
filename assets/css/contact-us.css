@@ -1,0 +1,206 @@
+/* Contact page   About / home design system */
+
+.contact-page-body,
+.contact-page-body #root,
+.contact-page-body .home-one-page {
+  background: #0a0a0a;
+  color: #fdfde1;
+}
+
+.contact-page-body .contact-page-hero.about-page-hero {
+  min-height: auto;
+  padding: 180px 0 60px 0px;
+}
+
+.contact-page-body .contact-section-lead {
+  max-width: 640px;
+  /* margin: 16px auto 0; */
+  color: rgba(253, 253, 225, 0.78);
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.contact-page-body .contact-form-section {
+  padding: 72px 0 48px;
+}
+
+.contact-page-body .contact-side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact-page-body .contact-highlight-card {
+  text-align: left;
+}
+
+.contact-page-body .contact-highlight-card a {
+  color: rgba(253, 253, 225, 0.85);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-page-body .contact-highlight-card a:hover {
+  color: #ff3b3b;
+}
+
+.contact-page-body .contact-thumb-wrap {
+  margin-top: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-page-body .contact-thumb-wrap img {
+  width: 100%;
+  display: block;
+}
+
+.contact-page-body .contact-form-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  padding: 32px;
+}
+
+.contact-page-body .contact-field {
+  margin-bottom: 18px;
+}
+
+.contact-page-body .contact-field label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(253, 253, 225, 0.65);
+  margin-bottom: 8px;
+}
+
+.contact-page-body .contact-field input,
+.contact-page-body .contact-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.35);
+  color: #fdfde1;
+  font-size: 15px;
+}
+
+.contact-page-body .contact-field input:focus,
+.contact-page-body .contact-field textarea:focus {
+  outline: none;
+  border-color: rgba(255, 59, 59, 0.5);
+  box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.12);
+}
+
+.contact-page-body .contact-field textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-page-body .contact-form-panel .btn-primary-cta {
+  width: 100%;
+  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-page-body .contact-form-success {
+  display: none;
+  margin-top: 20px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  color: #86efac;
+  font-weight: 600;
+}
+
+.contact-page-body .contact-info-section {
+  padding: 48px 0 72px;
+}
+
+.contact-page-body .contact-info-card {
+  height: 100%;
+  text-align: center;
+}
+
+.contact-page-body .contact-info-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.contact-page-body .contact-info-card p {
+  margin: 0;
+  color: rgba(253, 253, 225, 0.78);
+  line-height: 1.65;
+}
+
+.contact-page-body .contact-info-card a {
+  color: rgba(253, 253, 225, 0.85);
+  text-decoration: none;
+}
+
+.contact-page-body .contact-info-card a:hover {
+  color: #ff3b3b;
+}
+
+.contact-page-body .contact-map-section {
+  padding: 0 0 72px;
+}
+
+.contact-page-body .contact-map-panel {
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+.contact-page-body .contact-map-iframe {
+  display: block;
+  width: 100%;
+  height: min(450px, 70vh);
+  min-height: 320px;
+  border: 0;
+}
+
+.contact-page-body .contact-map-open a {
+  color: #ff3b3b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-page-body .contact-map-open a:hover {
+  color: #fdfde1;
+  text-decoration: underline;
+}
+
+.contact-page-body .about-faq-section {
+  padding-bottom: 88px;
+}
+
+.contact-page-body .reveal-up {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+
+.contact-page-body .reveal-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 991.98px) {
+  .contact-page-body .contact-page-hero.about-page-hero {
+    padding: 110px 0 64px;
+  }
+
+  .contact-page-body .contact-form-section,
+  .contact-page-body .contact-info-section {
+    padding: 48px 0;
+  }
+}

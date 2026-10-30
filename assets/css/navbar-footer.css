@@ -1844,3 +1844,23 @@ header#nav .nav-links a.roll:focus-visible::after {
     padding-top: 5.8rem !important;
   }
 }
+
+
+/* FINAL OVERRIDE: when the off-canvas drawer is open, show ONLY its logo. */
+@media (max-width: 1100px) {
+  body.service-page-body.menu-open #nav .nav-logo,
+  body.service-page-body.menu-open #nav .nav-logo img {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+  }
+
+  body.service-page-body.menu-open #mnav::before {
+    display: block !important;
+    content: "" !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: url('/assets/images/image-f445d64e51004507.webp') center left / contain no-repeat !important;
+  }
+}

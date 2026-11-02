@@ -4301,3 +4301,10 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
     position: static;
   }
 }
+
+/* Add the missing divider between the first two proof metrics (100+ and 5.0★). */
+@media (min-width: 561px) {
+  #proof .metrics .metric:first-child {
+    border-right: 1px solid var(--paper-line);
+  }
+}

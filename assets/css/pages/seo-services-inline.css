@@ -4436,3 +4436,17 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
   #why .why-copy .check-list li { font-size: .88rem; padding: .72rem 0; }
   #why .why-copy .hero-cta .btn { width: 100%; justify-content: center; }
 }
+
+/* Align the Why Chameleo CTA with the content column */
+#why .why-copy .hero-cta {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+@media (max-width: 560px) {
+  #why .why-copy .hero-cta .btn {
+    width: auto;
+    max-width: 100%;
+    justify-content: center;
+  }
+}

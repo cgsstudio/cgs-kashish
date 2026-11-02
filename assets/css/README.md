@@ -16,10 +16,10 @@ This directory is organized by responsibility. Existing stylesheet contents are 
 - `components/whatsapp-widget.css` — WhatsApp floating widget styles.
 
 ## Shared and vendor styles retained in this directory
-- `local-fonts.css`, `navbar-footer.css`, `styles.css`, `inline-extracted.css`, `marquee-slider.css`, `services-header-dropdown.css`, `header-footer.css`, `blog.css`, `blog-redesign.css`, `about-page.css`, `contact.css`, `contact-us.css`, `service-pages-redesign.css`, `web-development-services.css`, `conversion-focused-web-services.css`, `site.css`, `bootstrap.min.css`, `swiper-bundle.min.css`, and generated bundle `index-DhDdM_gX.css` are retained pending full page-by-page dependency migration. Vendor and generated bundles are not edited.
+- `local-fonts.css`, `navbar-footer.css`, `styles.css`, `inline-extracted.css`, `marquee-slider.css`, `services-header-dropdown.css`, `header-footer.css`, `blog.css`, `blog-redesign.css`, `about-page.css`, `contact.css`, `contact-us.css`, `service-pages-redesign.css`, `web-development-services.css`, `conversion-focused-web-services.css`, `bootstrap.min.css`, `swiper-bundle.min.css`, and generated bundle `index-DhDdM_gX.css` are retained pending full page-by-page dependency migration. The separate `/assets/site.css` file is outside this folder and has not been changed. Vendor and generated bundles are not edited.
 
 ## Notes
 - HTML references to renamed files were updated in the same commit.
 - No CSS declarations, selectors, breakpoints, animations, or values were changed.
 - No file was deleted in this pass. Empty or apparently unreferenced files are retained until a complete reference scan can prove they are safe to remove.
-- Some pages still use multiple shared stylesheets or inline style blocks; these are intentionally not collapsed until their cascade and visual output can be verified page by page.
+- This is the first structural pass, not the complete one-page/one-stylesheet migration. Some pages still use multiple shared stylesheets or inline style blocks; these are intentionally not collapsed until their cascade and visual output can be verified page by page.

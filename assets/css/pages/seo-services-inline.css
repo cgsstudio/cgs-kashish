@@ -4259,3 +4259,26 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
     transition: none !important;
   }
 }
+
+/* Dynamic pointer and scroll-linked motion */
+.hero-grid {
+  background-position: 0 var(--seo-grid-shift, 0px), var(--seo-grid-shift, 0px) 0;
+  will-change: background-position;
+}
+
+.ai-visual {
+  translate: 0 var(--seo-float-y, 0px);
+  transition: translate .12s linear;
+}
+
+.ai-card-showcase {
+  background-image:
+    radial-gradient(circle at var(--seo-pointer-x, 50%) var(--seo-pointer-y, 50%), rgba(237, 23, 48, .16), transparent 38%),
+    linear-gradient(145deg, rgba(25,27,35,.97), rgba(10,11,15,.98));
+  transition: background-position .18s ease, border-color .4s, box-shadow .4s, transform .65s cubic-bezier(.2,.8,.2,1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-grid { background-position: 0 0 !important; }
+  .ai-visual { translate: none !important; }
+}

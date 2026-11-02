@@ -2042,3 +2042,13 @@ body.home-page footer.foot>.foot-word span {
     font-size: clamp(2.5rem, 12vw, 5rem) !important;
   }
 }
+
+
+/* FIX: footer wordmark letters were being pushed below the viewport by
+   an inline transform animation. Keep each letter in its normal position. */
+footer.foot .foot-word span {
+  transform: none !important;
+  translate: none !important;
+  rotate: none !important;
+  scale: none !important;
+}

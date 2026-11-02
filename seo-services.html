@@ -1313,7 +1313,7 @@
       text-transform: uppercase;
     }
 
-    .m-set span::before {
+    .marq .m-set span::before {
       content: "★";
       color: var(--red);
       font-size: .72em;
@@ -3485,7 +3485,16 @@
     }
 
     .seo-proof-bundle .testi-rail .m-track {
+      display: flex;
+      width: max-content;
       animation: seoTestiMarquee 70s linear infinite;
+      will-change: transform;
+    }
+
+    .seo-proof-bundle .testi-rail .m-set {
+      display: flex;
+      flex: none;
+      align-items: stretch;
     }
 
     .seo-proof-bundle .logo-row:hover .m-track,

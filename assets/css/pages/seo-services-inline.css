@@ -4462,3 +4462,27 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
 #faq .faq-grid > [data-rv] .hero-cta .btn {
   margin-inline: 0;
 }
+
+/* Consistent typography for every SEO page section heading */
+main > section:not(.hero) h2.h2,
+main > section:not(.hero) h2.split,
+main > section:not(.hero) h2.tools-title,
+.seo-proof-bundle h2 {
+  font-family: inherit;
+  font-size: clamp(2rem, 3.5vw, 3.25rem) !important;
+  font-weight: 750;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+@media (max-width: 767px) {
+  main > section:not(.hero) h2.h2,
+  main > section:not(.hero) h2.split,
+  main > section:not(.hero) h2.tools-title,
+  .seo-proof-bundle h2 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
+    line-height: 1.1;
+    letter-spacing: -.04em;
+  }
+}

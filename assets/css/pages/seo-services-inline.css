@@ -4532,3 +4532,23 @@ main > section:not(.hero) h2.tools-title,
     padding-bottom: 30px !important;
   }
 }
+
+ 
+/* Final responsive vertical spacing: all SEO content sections */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main section:not(.hero),
+  .seo-proof-bundle section,
+  #faq {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  main section:not(.hero),
+  .seo-proof-bundle section,
+  #faq {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}

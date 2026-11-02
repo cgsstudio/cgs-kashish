@@ -4450,3 +4450,15 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
     justify-content: center;
   }
 }
+
+/* FAQ CTA: align button to the left edge of the heading and copy */
+#faq .faq-grid > [data-rv] .hero-cta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#faq .faq-grid > [data-rv] .hero-cta .btn {
+  margin-inline: 0;
+}

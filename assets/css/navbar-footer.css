@@ -890,6 +890,7 @@ body.contact-page #main>section:first-of-type {
 }
 
 .float-btn {
+  background-color: red;
   position: relative;
   width: 54px;
   height: 54px;
@@ -2059,6 +2060,7 @@ footer.foot .foot-word span {
 footer.foot .foot-word span {
   transition: color 0.35s ease, transform 0.5s var(--nav-ease) !important;
 }
+
 footer.foot .foot-word span:hover {
   color: var(--brand-red, #e5162b) !important;
 }
@@ -2070,14 +2072,17 @@ footer.foot {
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
 }
-footer.foot > .foot-word {
+
+footer.foot>.foot-word {
   margin-bottom: 0 !important;
 }
+
 @media (max-width: 1024px) {
   footer.foot {
     padding-bottom: 0 !important;
   }
-  footer.foot > .foot-word {
+
+  footer.foot>.foot-word {
     margin-bottom: 0 !important;
   }
 }
@@ -2090,12 +2095,14 @@ body#top header.nav .nav-links a.roll:focus-visible span,
 body#top header.nav .nav-links a.roll.active span {
   transform: none !important;
 }
+
 body#top header.nav .nav-links a.roll:hover::after,
 body#top header.nav .nav-links a.roll:focus-visible::after {
   display: none !important;
   opacity: 0 !important;
   transform: none !important;
 }
+
 body#top header.nav .nav-links a.roll:hover,
 body#top header.nav .nav-links a.roll:hover span,
 body#top header.nav .nav-links a.roll:focus-visible,

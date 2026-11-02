@@ -4450,3 +4450,86 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
     justify-content: center;
   }
 }
+
+/* ============ CONTENT-AWARE MOTION VARIANTS ============ */
+/* Different sections enter with different movement: headings reveal, cards lift,
+   process steps travel, metrics pop, FAQs slide, and comparison panels wipe in. */
+html.seo-motion-ready [data-seo-reveal],
+[data-rv].seo-motion-heading, [data-rv].seo-motion-slide-left,
+[data-rv].seo-motion-slide-right, [data-rv].seo-motion-card,
+[data-rv].seo-motion-step, [data-rv].seo-motion-metric,
+[data-rv].seo-motion-faq, [data-rv].seo-motion-wipe,
+[data-rv].seo-motion-list {
+  transition-property: opacity, transform, clip-path;
+  transition-duration: .82s;
+  transition-timing-function: cubic-bezier(.2,.8,.2,1);
+  transition-delay: var(--seo-reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+/* Heading: masked reveal */
+html.seo-motion-ready [data-seo-reveal="heading"],
+[data-rv].seo-motion-heading {
+  opacity: 0;
+  clip-path: inset(0 0 88% 0);
+  transform: translate3d(0,22px,0);
+}
+html.seo-motion-ready [data-seo-reveal="heading"].seo-revealed,
+[data-rv].seo-motion-heading.is-in { opacity: 1; clip-path: inset(0); transform: none; }
+
+/* Two-column copy and visual: move in from opposite sides */
+html.seo-motion-ready [data-seo-reveal="slide-left"],
+[data-rv].seo-motion-slide-left { opacity: 0; transform: translate3d(-42px,0,0); }
+html.seo-motion-ready [data-seo-reveal="slide-left"].seo-revealed,
+[data-rv].seo-motion-slide-left.is-in { opacity: 1; transform: none; }
+html.seo-motion-ready [data-seo-reveal="slide-right"],
+[data-rv].seo-motion-slide-right { opacity: 0; transform: translate3d(42px,0,0); }
+html.seo-motion-ready [data-seo-reveal="slide-right"].seo-revealed,
+[data-rv].seo-motion-slide-right.is-in { opacity: 1; transform: none; }
+
+/* Service, pricing and industry cards: soft lift and scale */
+html.seo-motion-ready [data-seo-reveal="card"],
+[data-rv].seo-motion-card { opacity: 0; transform: translate3d(0,30px,0) scale(.94); }
+html.seo-motion-ready [data-seo-reveal="card"].seo-revealed,
+[data-rv].seo-motion-card.is-in { opacity: 1; transform: none; }
+
+/* Process: directional step entrance */
+html.seo-motion-ready [data-seo-reveal="step"],
+[data-rv].seo-motion-step { opacity: 0; transform: translate3d(-28px,14px,0) scale(.97); }
+html.seo-motion-ready [data-seo-reveal="step"].seo-revealed,
+[data-rv].seo-motion-step.is-in { opacity: 1; transform: none; }
+
+/* Proof metrics: compact pop */
+html.seo-motion-ready [data-seo-reveal="metric"],
+[data-rv].seo-motion-metric { opacity: 0; transform: translate3d(0,16px,0) scale(.78) rotate(-2deg); transform-origin: center bottom; }
+html.seo-motion-ready [data-seo-reveal="metric"].seo-revealed,
+[data-rv].seo-motion-metric.is-in { opacity: 1; transform: none; }
+
+/* FAQ rows: slide in from the side */
+html.seo-motion-ready [data-seo-reveal="faq"],
+[data-rv].seo-motion-faq { opacity: 0; transform: translate3d(32px,0,0); }
+html.seo-motion-ready [data-seo-reveal="faq"].seo-revealed,
+[data-rv].seo-motion-faq.is-in { opacity: 1; transform: none; }
+
+/* Comparison / feature panels: horizontal wipe */
+html.seo-motion-ready [data-seo-reveal="wipe"],
+[data-rv].seo-motion-wipe { opacity: 0; clip-path: inset(0 100% 0 0); transform: translateY(8px); }
+html.seo-motion-ready [data-seo-reveal="wipe"].seo-revealed,
+[data-rv].seo-motion-wipe.is-in { opacity: 1; clip-path: inset(0); transform: none; }
+
+/* Bullet lists and tool chips: short staggered slide */
+html.seo-motion-ready [data-seo-reveal="list"],
+[data-rv].seo-motion-list { opacity: 0; transform: translate3d(-20px,0,0); }
+html.seo-motion-ready [data-seo-reveal="list"].seo-revealed,
+[data-rv].seo-motion-list.is-in { opacity: 1; transform: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-rv].seo-motion-heading, [data-rv].seo-motion-slide-left,
+  [data-rv].seo-motion-slide-right, [data-rv].seo-motion-card,
+  [data-rv].seo-motion-step, [data-rv].seo-motion-metric,
+  [data-rv].seo-motion-faq, [data-rv].seo-motion-wipe,
+  [data-rv].seo-motion-list, html.seo-motion-ready [data-seo-reveal] {
+    opacity: 1 !important; transform: none !important; clip-path: none !important;
+    transition: none !important; will-change: auto !important;
+  }
+}

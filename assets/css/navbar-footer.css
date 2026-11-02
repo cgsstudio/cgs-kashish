@@ -2081,3 +2081,24 @@ footer.foot > .foot-word {
     margin-bottom: 0 !important;
   }
 }
+
+
+
+/* Career page header: keep nav labels stationary; hover changes color only. */
+body#top header.nav .nav-links a.roll:hover span,
+body#top header.nav .nav-links a.roll:focus-visible span,
+body#top header.nav .nav-links a.roll.active span {
+  transform: none !important;
+}
+body#top header.nav .nav-links a.roll:hover::after,
+body#top header.nav .nav-links a.roll:focus-visible::after {
+  display: none !important;
+  opacity: 0 !important;
+  transform: none !important;
+}
+body#top header.nav .nav-links a.roll:hover,
+body#top header.nav .nav-links a.roll:hover span,
+body#top header.nav .nav-links a.roll:focus-visible,
+body#top header.nav .nav-links a.roll:focus-visible span {
+  color: #E5162B !important;
+}

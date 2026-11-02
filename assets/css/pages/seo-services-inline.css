@@ -3654,3 +3654,54 @@ main section.section,
     border-bottom: 0;
   }
 }
+
+
+/* Tablet alignment: center the SEO hero content and package cards. */
+@media (min-width: 621px) and (max-width: 1024px) {
+  .hero-inner {
+    width: min(100% - 3rem, 760px);
+    margin-inline: auto;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .hero-copy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-title,
+  .hero-sub {
+    margin-inline: auto;
+  }
+
+  .hero-cta,
+  .hero-trust {
+    justify-content: center;
+  }
+
+  .hv {
+    width: 100%;
+    max-width: 560px;
+    margin-inline: auto;
+  }
+
+  #packages .wrap {
+    width: min(100% - 3rem, 760px);
+    margin-inline: auto;
+  }
+
+  #packages .sec-head {
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  #packages .price-grid {
+    width: 100%;
+    max-width: 520px;
+    margin-inline: auto;
+    justify-items: stretch;
+  }
+}

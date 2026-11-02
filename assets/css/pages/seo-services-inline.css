@@ -4552,3 +4552,20 @@ main > section:not(.hero) h2.tools-title,
     padding-bottom: 30px !important;
   }
 }
+
+ 
+/* Center the Engagements section heading and supporting copy at every viewport. */
+#packages .sec-head {
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center !important;
+}
+
+#packages .sec-head .eyebrow,
+#packages .sec-head h2,
+#packages .sec-head .lead {
+  display: block;
+  margin-inline: auto;
+  text-align: center !important;
+}

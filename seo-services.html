@@ -3540,7 +3540,42 @@
         animation: none;
       }
     }
-  </style>
+  
+/* Unified section heading scale across the SEO page. */
+main h2,
+.seo-proof-bundle h2 {
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+main h2.h2,
+main h2.split,
+.seo-proof-bundle h2,
+.seo-proof-bundle h2.split {
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+}
+.tools .tools-title {
+  flex: 0 1 24ch;
+  max-width: 24ch;
+  margin: 0;
+  color: var(--on-dark);
+  font-family: var(--display);
+  font-size: clamp(2rem, 3.5vw, 3.25rem);
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.045em;
+  text-transform: none;
+}
+@media(max-width:560px) {
+  main h2,
+  .seo-proof-bundle h2,
+  .tools .tools-title {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+  }
+}
+</style>
 </head>
 
 <body>
@@ -3678,7 +3713,7 @@
     <!-- ================= 3 · TOOL STRIP ================= -->
     <section class="tools" aria-label="Tools and platforms we use">
       <div class="wrap tools-in">
-        <p>Audited and tracked in the tools your team already trusts</p>
+        <h2 class="tools-title">Audited and tracked in the tools your team already trusts</h2>
         <ul class="tool-chips" aria-label="SEO and AI tools">
           <li class="tool-chip"><span class="tool-logo"><img
                 src="https://www.google.com/s2/favicons?domain=search.google.com&amp;sz=128"

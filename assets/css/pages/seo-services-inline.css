@@ -4486,3 +4486,30 @@ main > section:not(.hero) h2.tools-title,
     letter-spacing: -.04em;
   }
 }
+
+/* Enforce one shared size across every SEO section H2, including component overrides. */
+main > section:not(.hero) h2.h2,
+main > section:not(.hero) h2.split,
+main > section:not(.hero) h2.tools-title,
+.seo-proof-bundle h2,
+.tools .tools-title,
+.ai-search-copy .h2,
+#why .why-copy .h2 {
+  font-size: clamp(2rem, 3.5vw, 3.25rem) !important;
+  line-height: 1.08 !important;
+  letter-spacing: -.045em !important;
+}
+
+@media (max-width: 767px) {
+  main > section:not(.hero) h2.h2,
+  main > section:not(.hero) h2.split,
+  main > section:not(.hero) h2.tools-title,
+  .seo-proof-bundle h2,
+  .tools .tools-title,
+  .ai-search-copy .h2,
+  #why .why-copy .h2 {
+    font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
+    line-height: 1.1 !important;
+    letter-spacing: -.04em !important;
+  }
+}

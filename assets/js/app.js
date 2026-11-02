@@ -652,8 +652,9 @@
           e.preventDefault();
           e.stopImmediatePropagation();
           setActiveChip(i);
-          go(target, { offset: -110, duration: 1.25 });
-          if (!lenis) {
+          if (lenis) {
+            go(target, { offset: -110, duration: 1.25 });
+          } else {
             const top = window.scrollY + target.getBoundingClientRect().top - 110;
             window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
           }

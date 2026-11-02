@@ -2052,3 +2052,13 @@ footer.foot .foot-word span {
   rotate: none !important;
   scale: none !important;
 }
+
+
+
+/* Global footer wordmark hover: highlight each letter in brand red. */
+footer.foot .foot-word span {
+  transition: color 0.35s ease, transform 0.5s var(--nav-ease) !important;
+}
+footer.foot .foot-word span:hover {
+  color: var(--brand-red, #e5162b) !important;
+}

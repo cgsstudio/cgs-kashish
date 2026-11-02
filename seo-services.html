@@ -1496,8 +1496,24 @@
       if (RM) { enterHero(); }
       else { requestAnimationFrame(() => setTimeout(enterHero, 220)); }
 
+      /* Assign a distinct motion style to each kind of SEO content. */
+      const getSeoMotionType = (el) => {
+        if (el.matches(".sec-head, .tools-title")) return "heading";
+        if (el.matches(".faq-item")) return "faq";
+        if (el.matches(".metric, .metrics > *")) return "metric";
+        if (el.matches(".step, .proc-aside")) return "step";
+        if (el.matches(".svc, .price, .pf, .ind, .tcard, .rate-card, .logo-tile")) return "card";
+        if (el.matches(".cmp")) return "wipe";
+        if (el.matches(".check-list li, .pa-list li, .tool-chip, .tool-chips li")) return "list";
+        if (el.matches(".split-txt, .ai-visual")) return el.matches("[data-rv=right]") || el.classList.contains("ai-visual") ? "slide-right" : "slide-left";
+        const section = el.closest("section");
+        if (section && section.id === "process") return "step";
+        if (section && section.id === "proof") return "metric";
+        return "rise";
+      };
       /* ---------- reveal on scroll ---------- */
-      const revealEls = $$("[data-rv]");
+      const revealEls = $("[data-rv]");
+      if (!RM) revealEls.forEach(el => el.classList.add("seo-motion-" + getSeoMotionType(el)));
       if ("IntersectionObserver" in window && !RM) {
         const io = new IntersectionObserver((entries) => {
           entries.forEach((e, i) => {
@@ -1545,7 +1561,7 @@
           });
         }, { threshold: 0.12, rootMargin: "0px 0px -7% 0px" });
         motionTargets.forEach((el, index) => {
-          el.setAttribute("data-seo-reveal", "up");
+          el.setAttribute("data-seo-reveal", getSeoMotionType(el));
           const siblings = [...el.parentElement.children].filter(node => node.hasAttribute("data-seo-reveal"));
           el.style.setProperty("--seo-reveal-delay", Math.min(siblings.indexOf(el) * 75, 300) + "ms");
           motionObserver.observe(el);

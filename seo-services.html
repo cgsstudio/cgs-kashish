@@ -5142,6 +5142,145 @@ main section.section,
     left: 14px !important;
   }
 }
+
+/* SEO audit form polish: dark premium card, consistent controls and readable select menu. */
+#contact .form-card {
+  width: 100%;
+  max-width: 650px;
+  margin-inline: auto;
+  padding: clamp(1.35rem, 2.4vw, 2rem);
+  border: 1px solid rgba(255,255,255,.16);
+  border-radius: 30px;
+  background: rgba(17,18,24,.94);
+  box-shadow: 0 28px 70px rgba(0,0,0,.34);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+#contact .form-card h3 {
+  margin: 0 0 .35rem;
+  color: #f5f5f7;
+  font-size: clamp(1.2rem, 2vw, 1.45rem);
+  font-weight: 750;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+}
+
+#contact .form-card > p {
+  margin: 0 0 1.35rem;
+  color: #a0a1aa;
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+#contact .f-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .85rem .7rem;
+}
+
+#contact .field {
+  min-width: 0;
+  gap: .45rem;
+}
+
+#contact .field label {
+  color: #9b9da7;
+  font-size: .62rem;
+  font-weight: 600;
+  letter-spacing: .16em;
+  line-height: 1.2;
+}
+
+#contact .field input,
+#contact .field select,
+#contact .field textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 47px;
+  padding: .78rem .9rem;
+  border: 1px solid rgba(255,255,255,.17);
+  border-radius: 11px;
+  background-color: #1b1c22;
+  color: #f0f0f3;
+  font: 400 .9rem/1.35 var(--body);
+  color-scheme: dark;
+  transition: border-color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+#contact .field input::placeholder,
+#contact .field textarea::placeholder {
+  color: #747680;
+  opacity: 1;
+}
+
+#contact .field input:focus,
+#contact .field select:focus,
+#contact .field textarea:focus {
+  outline: none;
+  border-color: var(--red, #ed1730);
+  background-color: #202127;
+  box-shadow: 0 0 0 3px rgba(237,23,48,.13);
+}
+
+#contact .field select {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 2.5rem;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='9' viewBox='0 0 14 9'%3E%3Cpath d='m1 1 6 6 6-6' fill='none' stroke='%23a0a1aa' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right .95rem center;
+}
+
+#contact .field select option {
+  background: #1b1c22;
+  color: #f0f0f3;
+}
+
+#contact .field textarea {
+  min-height: 88px;
+  resize: vertical;
+}
+
+#contact .form-card button[type="submit"] {
+  width: 100%;
+  min-height: 48px;
+  justify-content: center;
+  border-radius: 999px;
+}
+
+#contact .form-note {
+  margin: .85rem 0 0;
+  color: #9698a2;
+  font-size: .74rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  #contact .form-card {
+    padding: 1.2rem;
+    border-radius: 22px;
+  }
+
+  #contact .f-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: .8rem;
+  }
+
+  #contact .field.full {
+    grid-column: auto;
+  }
+
+  #contact .field input,
+  #contact .field select,
+  #contact .field textarea {
+    min-height: 46px;
+    font-size: 16px;
+  }
+}
 </style>
   </noscript>
   <script>(function () { function c() { var b = a.contentDocument || (a.contentWindow && a.contentWindow.document); if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a51a459a1e5421dd',t:'MTc5MzE5Mzk4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>

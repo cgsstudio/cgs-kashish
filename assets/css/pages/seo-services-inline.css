@@ -4277,3 +4277,27 @@ html.seo-motion-ready [data-seo-reveal].seo-revealed {
   .hero-grid { background-position: 0 0 !important; }
   .ai-visual { translate: none !important; }
 }
+
+/* FAQ: keep the intro pinned while the questions scroll past */
+@media (min-width: 901px) {
+  #faq .faq-grid {
+    align-items: stretch;
+  }
+
+  #faq .faq-grid > [data-rv] {
+    position: sticky;
+    top: clamp(110px, 17vh, 170px);
+    align-self: start;
+    z-index: 2;
+  }
+
+  #faq .faq {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  #faq .faq-grid > [data-rv] {
+    position: static;
+  }
+}

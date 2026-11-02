@@ -5144,6 +5144,50 @@ main section.section,
     padding-bottom: 3rem !important;
   }
 }
+
+/* Keep the final CHAMELEO footer wordmark consistent with the shared site footer. */
+footer.foot {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  overflow: visible !important;
+}
+footer.foot > .foot-word {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: nowrap !important;
+  width: 100% !important;
+  min-height: clamp(4rem, 14vw, 13rem) !important;
+  height: auto !important;
+  margin: clamp(1.5rem, 3vw, 3rem) 0 0 !important;
+  padding: 0 1rem .08em !important;
+  box-sizing: border-box !important;
+  overflow: visible !important;
+  white-space: nowrap !important;
+  font-family: var(--brand-display, 'Bricolage Grotesque', sans-serif) !important;
+  font-size: clamp(3rem, 12vw, 13rem) !important;
+  font-weight: 800 !important;
+  line-height: .9 !important;
+  letter-spacing: 0 !important;
+}
+footer.foot > .foot-word span {
+  display: inline-block !important;
+  flex: 0 0 auto !important;
+  color: #303137 !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
+  translate: none !important;
+  font: inherit !important;
+}
+@media (max-width: 768px) {
+  footer.foot > .foot-word {
+    min-height: 3.5rem !important;
+    font-size: clamp(2.5rem, 13vw, 5rem) !important;
+    margin-top: 1.5rem !important;
+    padding-inline: .5rem !important;
+  }
+}
 </style>
   </noscript>
   <script>(function () { function c() { var b = a.contentDocument || (a.contentWindow && a.contentWindow.document); if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'a51a459a1e5421dd',t:'MTc5MzE5Mzk4Mw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>

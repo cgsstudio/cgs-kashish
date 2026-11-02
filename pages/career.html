@@ -2190,6 +2190,30 @@
       background: rgba(255, 255, 255, .05)
     }
 
+    /* Career page: use the browser's normal cursor instead of the custom dot/ring. */
+    .cursor-dot,
+    .cursor-ring {
+      display: none !important;
+      visibility: hidden !important;
+    }
+    body,
+    body * {
+      cursor: auto;
+    }
+    a,
+    button,
+    [role="button"],
+    input[type="submit"],
+    input[type="button"],
+    summary {
+      cursor: pointer;
+    }
+    input,
+    textarea,
+    select {
+      cursor: auto;
+    }
+
     .ripple {
       position: absolute;
       border-radius: 50%;

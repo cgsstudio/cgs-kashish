@@ -4513,3 +4513,22 @@ main > section:not(.hero) h2.tools-title,
     letter-spacing: -.04em !important;
   }
 }
+
+/* Consistent vertical spacing for every SEO page section */
+@media (min-width: 768px) and (max-width: 1024px) {
+  main > section,
+  main .seo-proof-bundle section,
+  .seo-proof-bundle > section {
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  main > section,
+  main .seo-proof-bundle section,
+  .seo-proof-bundle > section {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+  }
+}

@@ -3580,3 +3580,77 @@ main section.section,
   cursor: wait;
   transform: none;
 }
+
+
+/* Mobile comparison layout: turn each comparison row into a readable card. */
+@media (max-width: 620px) {
+  .cmp {
+    overflow: visible;
+    border-radius: 18px;
+  }
+
+  .cmp table {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    font-size: .84rem;
+  }
+
+  .cmp thead {
+    display: none;
+  }
+
+  .cmp tbody {
+    display: grid;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .cmp tbody tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid var(--ink-line-2);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, .025);
+  }
+
+  .cmp tbody th {
+    display: block;
+    width: auto;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--ink-line-2);
+    background: rgba(255, 255, 255, .045);
+    font-size: .88rem;
+  }
+
+  .cmp tbody td {
+    display: grid;
+    grid-template-columns: 76px minmax(0, 1fr);
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    min-width: 0;
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--ink-line);
+    overflow-wrap: anywhere;
+    line-height: 1.5;
+  }
+
+  .cmp tbody td::before {
+    content: attr(data-label);
+    color: var(--on-dark-mut);
+    font: 500 .62rem/1.4 var(--mono);
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .cmp tbody td.hl {
+    background: rgba(229, 22, 43, .075);
+  }
+
+  .cmp tbody tr:last-child td:last-child {
+    border-bottom: 0;
+  }
+}

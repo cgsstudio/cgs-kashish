@@ -4569,7 +4569,16 @@ main > section:not(.hero) h2.tools-title,
     text-align: center !important;
   }
 
-  #packages .sec-head .eyebrow,
+  #packages .sec-head .eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    max-width: max-content;
+    align-self: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
   #packages .sec-head #pack-h2,
   #packages .sec-head .lead {
     width: 100%;

@@ -1,6 +1,6 @@
 /* Page stylesheet entrypoint: contact-legacy.html */
 /* Shared styles are imported in their previous document order. */
-@import url("../../local-fonts.css");
-@import url("../../styles.css?v=1.6");
-@import url("../../contact.css?v=1.1");
-@import url("../../navbar-footer.css?v=global-components-1");
+@import url("../local-fonts.css");
+@import url("../styles.css?v=1.6");
+@import url("../contact.css?v=1.1");
+@import url("../navbar-footer.css?v=global-components-1");

@@ -1529,7 +1529,7 @@
         ];
         $$("main > section:not(.hero), .seo-proof-bundle > section, #faq").forEach(section => {
           motionSelectors.forEach(selector => {
-            $(selector, section).forEach(el => {
+            $$(selector, section).forEach(el => {
               if (!el.hasAttribute("data-rv") && !el.hasAttribute("data-r") && !el.closest(".hero")) {
                 motionTargets.add(el);
               }

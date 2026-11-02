@@ -1255,6 +1255,7 @@
     .marq {
       position: relative;
       padding: 1.05rem 0;
+      margin-bottom: clamp(1.5rem, 3vw, 2.5rem);
       border-block: 1px solid var(--ink-line);
       background: rgba(255, 255, 255, .018);
       overflow: hidden;
@@ -1312,10 +1313,11 @@
       text-transform: uppercase;
     }
 
-    .m-set span::after {
-
+    .m-set span::before {
+      content: "★";
       color: var(--red);
-      font-size: .8em
+      font-size: .72em;
+      line-height: 1;
     }
 
     @keyframes marq {

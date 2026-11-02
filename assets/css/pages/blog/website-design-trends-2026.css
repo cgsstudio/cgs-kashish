@@ -1,0 +1,21 @@
+/* Page stylesheet entrypoint: blog/website-design-trends-2026.html */
+/* Shared styles imported in their previous order; original CSS files remain shared. */
+@import url("../../bootstrap.min.css");
+@import url("../../swiper-bundle.min.css");
+@import url("../../marquee-slider.css");
+@import url("../../header-footer.css");
+@import url("../../index-DhDdM_gX.css");
+@import url("../../components/whatsapp-widget.css");
+@import url("../../components/navbar-mega-menu.css");
+@import url("../../components/footer-layout.css");
+@import url("../../components/about-section.css");
+@import url("../../components/why-choose-us-section.css");
+@import url("../../components/testimonials-section.css");
+@import url("../../components/home-one-section.css");
+@import url("../../components/industries-home-section.css");
+@import url("../../inline-extracted.css");
+@import url("../../about-page.css");
+@import url("../../service-pages-redesign.css");
+@import url("../../services-header-dropdown.css");
+@import url("../../blog-redesign.css");
+@import url("../../navbar-footer.css");

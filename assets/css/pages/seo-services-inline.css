@@ -3350,158 +3350,179 @@ main section.section,
 }
 
 
-/* ============ SEO TOOLS — REDESIGNED TRUST PANEL ============ */
+/* ============ SEO TOOLS — REFINED TOOLKIT GRID ============ */
 .tools {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding-block: clamp(3.5rem, 6vw, 5.5rem);
-  border-top: 1px solid rgba(255,255,255,.055);
-  border-bottom: 1px solid rgba(255,255,255,.08);
+  padding-block: clamp(3.8rem, 6vw, 5.6rem);
+  border-block: 1px solid rgba(255,255,255,.07);
   background:
-    radial-gradient(ellipse at 12% 50%, rgba(229,22,43,.10), transparent 42%),
-    linear-gradient(115deg, #0b0c10 0%, #101116 52%, #0b0c10 100%);
+    radial-gradient(ellipse at 8% 0%, rgba(229,22,43,.12), transparent 34%),
+    radial-gradient(ellipse at 94% 100%, rgba(113,92,255,.07), transparent 36%),
+    #0b0c10;
 }
 
-.tools::before {
+.tools::before,
+.tools::after {
   content: "";
   position: absolute;
   z-index: -1;
-  width: 340px;
-  height: 340px;
-  top: -210px;
-  right: 8%;
-  border: 1px solid rgba(255,255,255,.055);
-  border-radius: 50%;
-  box-shadow: 0 0 0 34px rgba(255,255,255,.018), 0 0 0 68px rgba(255,255,255,.012);
   pointer-events: none;
+  border-radius: 50%;
+}
+
+.tools::before {
+  width: 460px;
+  height: 460px;
+  top: -330px;
+  right: 7%;
+  border: 1px solid rgba(255,255,255,.06);
+  box-shadow: 0 0 0 42px rgba(255,255,255,.018), 0 0 0 84px rgba(255,255,255,.012);
+}
+
+.tools::after {
+  width: 260px;
+  height: 260px;
+  bottom: -220px;
+  left: 24%;
+  background: rgba(229,22,43,.08);
+  filter: blur(70px);
 }
 
 .tools-in {
   display: grid;
-  grid-template-columns: minmax(250px, .82fr) minmax(0, 1.6fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: clamp(1.8rem, 3vw, 2.6rem);
 }
 
 .tools .tools-title {
   position: relative;
-  max-width: 12ch;
+  max-width: 25ch;
   margin: 0;
-  padding-top: 1.25rem;
+  padding: 0 0 1.45rem;
   color: #f5f5f7;
-  font-size: clamp(2rem, 3.15vw, 3.35rem);
-  line-height: 1.06;
-  letter-spacing: -.055em;
+  font-family: var(--display);
+  font-size: clamp(2.1rem, 3.5vw, 3.45rem);
   font-weight: 800;
+  line-height: 1.04;
+  letter-spacing: -.058em;
 }
 
 .tools .tools-title::before {
   content: "THE SEO TOOLKIT";
   display: block;
-  margin-bottom: 1.15rem;
-  color: #f05a68;
-  font: 600 .68rem/1.2 var(--mono);
-  letter-spacing: .16em;
+  width: fit-content;
+  margin-bottom: 1rem;
+  padding: .45rem .7rem;
+  border: 1px solid rgba(229,22,43,.25);
+  border-radius: 999px;
+  background: rgba(229,22,43,.08);
+  color: #ff7b87;
+  font: 600 .63rem/1 var(--mono);
+  letter-spacing: .15em;
 }
 
 .tools .tools-title::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 48px;
-  height: 3px;
-  border-radius: 10px;
-  background: linear-gradient(90deg, #e5162b, #f0a30a);
+  content: "12 TOOLS  /  SEO  /  ANALYTICS  /  AI SEARCH";
+  display: block;
+  margin-top: 1rem;
+  color: rgba(245,245,247,.43);
+  font: 500 .65rem/1.4 var(--mono);
+  letter-spacing: .12em;
 }
 
 .tool-chips {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: .8rem;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .85rem;
   width: 100%;
   padding: 0;
   margin: 0;
   list-style: none;
+  counter-reset: seo-tool;
 }
 
 .tool-chips .tool-chip {
+  counter-increment: seo-tool;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: .75rem;
+  gap: .8rem;
   min-width: 0;
-  min-height: 66px;
-  padding: .8rem .9rem;
+  min-height: 76px;
+  padding: .9rem 1rem;
   overflow: hidden;
-  border: 1px solid rgba(255,255,255,.10);
-  border-radius: 13px;
-  background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
-  color: rgba(245,245,247,.86);
-  font: 500 .76rem/1.35 var(--mono);
-  letter-spacing: -.015em;
+  border: 1px solid rgba(255,255,255,.095);
+  border-radius: 14px;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.018)),
+    rgba(17,18,23,.8);
+  color: rgba(245,245,247,.88);
+  font: 500 .77rem/1.35 var(--mono);
+  letter-spacing: -.02em;
   white-space: normal;
-  transition: transform .3s ease, border-color .3s ease, background .3s ease, box-shadow .3s ease;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.035), 0 8px 24px -22px #000;
+  transition: transform .32s ease, border-color .32s ease, background .32s ease, box-shadow .32s ease;
+}
+
+.tool-chips .tool-chip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background: linear-gradient(115deg, rgba(229,22,43,.12), transparent 55%);
+  transition: opacity .32s ease;
+  pointer-events: none;
 }
 
 .tool-chips .tool-chip::after {
-  content: "";
+  content: counter(seo-tool, decimal-leading-zero);
   position: absolute;
-  left: 0;
-  top: 15px;
-  bottom: 15px;
-  width: 2px;
-  border-radius: 0 4px 4px 0;
-  background: linear-gradient(180deg, #e5162b, #f0a30a);
-  opacity: 0;
-  transform: scaleY(.5);
-  transition: opacity .3s ease, transform .3s ease;
+  top: 8px;
+  right: 10px;
+  color: rgba(255,255,255,.2);
+  font: 500 .55rem/1 var(--mono);
+  letter-spacing: .08em;
+  pointer-events: none;
 }
 
 .tool-chips .tool-chip:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: rgba(229,22,43,.42);
-  background: linear-gradient(145deg, rgba(229,22,43,.11), rgba(255,255,255,.045));
-  box-shadow: 0 14px 32px -24px rgba(229,22,43,.8);
+  background: linear-gradient(145deg, rgba(229,22,43,.10), rgba(255,255,255,.035));
+  box-shadow: 0 16px 34px -25px rgba(229,22,43,.75), inset 0 1px 0 rgba(255,255,255,.07);
   color: #fff;
 }
 
-.tool-chips .tool-chip:hover::after {
+.tool-chips .tool-chip:hover::before {
   opacity: 1;
-  transform: scaleY(1);
 }
 
 .tool-logo {
+  position: relative;
+  z-index: 1;
   display: grid;
   place-items: center;
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
-  border: 1px solid rgba(0,0,0,.06);
-  border-radius: 9px;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid rgba(0,0,0,.07);
+  border-radius: 10px;
   background: #fff;
   overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0,0,0,.18);
 }
 
 .tool-logo img {
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 25px;
+  height: 25px;
   object-fit: contain;
 }
 
 @media (max-width: 1000px) {
-  .tools-in {
-    grid-template-columns: 1fr;
-    gap: 1.8rem;
-  }
-
-  .tools .tools-title {
-    max-width: 18ch;
-  }
-
   .tool-chips {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3513,18 +3534,24 @@ main section.section,
   }
 
   .tools-in {
-    gap: 1.5rem;
+    gap: 1.45rem;
   }
 
   .tools .tools-title {
-    max-width: 15ch;
-    padding-top: 1rem;
-    font-size: clamp(1.9rem, 8vw, 2.5rem);
+    max-width: 22ch;
+    padding-bottom: 0;
+    font-size: clamp(1.9rem, 7.8vw, 2.55rem);
   }
 
   .tools .tools-title::before {
     margin-bottom: .9rem;
-    font-size: .62rem;
+    font-size: .59rem;
+  }
+
+  .tools .tools-title::after {
+    margin-top: .8rem;
+    font-size: .56rem;
+    letter-spacing: .08em;
   }
 
   .tool-chips {
@@ -3533,23 +3560,29 @@ main section.section,
   }
 
   .tool-chips .tool-chip {
-    min-height: 60px;
+    min-height: 66px;
     gap: .55rem;
-    padding: .65rem .65rem;
-    border-radius: 11px;
-    font-size: .68rem;
+    padding: .7rem .65rem;
+    border-radius: 12px;
+    font-size: .66rem;
+  }
+
+  .tool-chips .tool-chip::after {
+    top: 7px;
+    right: 7px;
+    font-size: .5rem;
   }
 
   .tool-logo {
-    flex-basis: 29px;
-    width: 29px;
-    height: 29px;
+    flex-basis: 31px;
+    width: 31px;
+    height: 31px;
     border-radius: 8px;
   }
 
   .tool-logo img {
-    width: 20px;
-    height: 20px;
+    width: 21px;
+    height: 21px;
   }
 }
 
@@ -3559,6 +3592,17 @@ main section.section,
   }
 
   .tool-chips .tool-chip {
-    min-height: 54px;
+    min-height: 58px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tool-chips .tool-chip,
+  .tool-chips .tool-chip::before {
+    transition: none;
+  }
+
+  .tool-chips .tool-chip:hover {
+    transform: none;
   }
 }

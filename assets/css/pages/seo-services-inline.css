@@ -3348,3 +3348,217 @@ main section.section,
     justify-items: stretch;
   }
 }
+
+
+/* ============ SEO TOOLS — REDESIGNED TRUST PANEL ============ */
+.tools {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 6vw, 5.5rem);
+  border-top: 1px solid rgba(255,255,255,.055);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  background:
+    radial-gradient(ellipse at 12% 50%, rgba(229,22,43,.10), transparent 42%),
+    linear-gradient(115deg, #0b0c10 0%, #101116 52%, #0b0c10 100%);
+}
+
+.tools::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 340px;
+  height: 340px;
+  top: -210px;
+  right: 8%;
+  border: 1px solid rgba(255,255,255,.055);
+  border-radius: 50%;
+  box-shadow: 0 0 0 34px rgba(255,255,255,.018), 0 0 0 68px rgba(255,255,255,.012);
+  pointer-events: none;
+}
+
+.tools-in {
+  display: grid;
+  grid-template-columns: minmax(250px, .82fr) minmax(0, 1.6fr);
+  align-items: center;
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+.tools .tools-title {
+  position: relative;
+  max-width: 12ch;
+  margin: 0;
+  padding-top: 1.25rem;
+  color: #f5f5f7;
+  font-size: clamp(2rem, 3.15vw, 3.35rem);
+  line-height: 1.06;
+  letter-spacing: -.055em;
+  font-weight: 800;
+}
+
+.tools .tools-title::before {
+  content: "THE SEO TOOLKIT";
+  display: block;
+  margin-bottom: 1.15rem;
+  color: #f05a68;
+  font: 600 .68rem/1.2 var(--mono);
+  letter-spacing: .16em;
+}
+
+.tools .tools-title::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 3px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #e5162b, #f0a30a);
+}
+
+.tool-chips {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: .8rem;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tool-chips .tool-chip {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: .75rem;
+  min-width: 0;
+  min-height: 66px;
+  padding: .8rem .9rem;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 13px;
+  background: linear-gradient(145deg, rgba(255,255,255,.065), rgba(255,255,255,.025));
+  color: rgba(245,245,247,.86);
+  font: 500 .76rem/1.35 var(--mono);
+  letter-spacing: -.015em;
+  white-space: normal;
+  transition: transform .3s ease, border-color .3s ease, background .3s ease, box-shadow .3s ease;
+}
+
+.tool-chips .tool-chip::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  bottom: 15px;
+  width: 2px;
+  border-radius: 0 4px 4px 0;
+  background: linear-gradient(180deg, #e5162b, #f0a30a);
+  opacity: 0;
+  transform: scaleY(.5);
+  transition: opacity .3s ease, transform .3s ease;
+}
+
+.tool-chips .tool-chip:hover {
+  transform: translateY(-3px);
+  border-color: rgba(229,22,43,.42);
+  background: linear-gradient(145deg, rgba(229,22,43,.11), rgba(255,255,255,.045));
+  box-shadow: 0 14px 32px -24px rgba(229,22,43,.8);
+  color: #fff;
+}
+
+.tool-chips .tool-chip:hover::after {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.tool-logo {
+  display: grid;
+  place-items: center;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 9px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.tool-logo img {
+  display: block;
+  width: 23px;
+  height: 23px;
+  object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+  .tools-in {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .tools .tools-title {
+    max-width: 18ch;
+  }
+
+  .tool-chips {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .tools {
+    padding-block: 3rem;
+  }
+
+  .tools-in {
+    gap: 1.5rem;
+  }
+
+  .tools .tools-title {
+    max-width: 15ch;
+    padding-top: 1rem;
+    font-size: clamp(1.9rem, 8vw, 2.5rem);
+  }
+
+  .tools .tools-title::before {
+    margin-bottom: .9rem;
+    font-size: .62rem;
+  }
+
+  .tool-chips {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .65rem;
+  }
+
+  .tool-chips .tool-chip {
+    min-height: 60px;
+    gap: .55rem;
+    padding: .65rem .65rem;
+    border-radius: 11px;
+    font-size: .68rem;
+  }
+
+  .tool-logo {
+    flex-basis: 29px;
+    width: 29px;
+    height: 29px;
+    border-radius: 8px;
+  }
+
+  .tool-logo img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .tool-chips {
+    grid-template-columns: 1fr;
+  }
+
+  .tool-chips .tool-chip {
+    min-height: 54px;
+  }
+}

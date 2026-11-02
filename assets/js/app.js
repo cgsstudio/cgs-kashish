@@ -642,6 +642,24 @@
         });
       }
 
+      /* Make the case-study pills navigate directly to their matching cards.
+         Capture the click before the site's generic hash-link handler. */
+      indexLinks.forEach((link, i) => {
+        link.addEventListener("click", (e) => {
+          const href = link.getAttribute("href");
+          const target = href ? document.querySelector(href) : null;
+          if (!target) return;
+          e.preventDefault();
+          e.stopImmediatePropagation();
+          setActiveChip(i);
+          go(target, { offset: -110, duration: 1.25 });
+          if (!lenis) {
+            const top = window.scrollY + target.getBoundingClientRect().top - 110;
+            window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+          }
+        }, true);
+      });
+
       const states = cases.map(() => ({
         s: 1, ts: 1, tx: 0, ty: 0, ttx: 0, tty: 0, ls: 0, ltx: 99, lty: 99
       }));

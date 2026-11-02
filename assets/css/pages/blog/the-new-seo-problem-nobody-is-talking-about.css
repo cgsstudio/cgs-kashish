@@ -1,0 +1,12 @@
+/* Page stylesheet entrypoint: the-new-seo-problem-nobody-is-talking-about.html */
+/* Imports retain the page's existing stylesheet order and cache versions. */
+@import url("../../styles.css");
+@import url("../../blog.css");
+
+/* Page-specific inline rules, moved from the HTML head. */
+.toc-container,
+            .toc-container h2,
+            .toc-container a,
+            .toc-container li {
+              color: white !important;
+            }

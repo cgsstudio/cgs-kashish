@@ -1,0 +1,4 @@
+/* Page stylesheet entrypoint: privacy-policy.html */
+/* Shared styles are imported in their previous document order. */
+@import url("../styles.css?v=1.1");
+@import url("../navbar-footer.css");

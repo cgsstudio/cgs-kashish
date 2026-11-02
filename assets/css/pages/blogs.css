@@ -1,0 +1,5 @@
+/* Page stylesheet entrypoint: blogs.html */
+/* Shared styles imported in their previous order; original CSS files remain shared. */
+@import url("../styles.css?v=1.1");
+@import url("../blog.css?v=1.4");
+@import url("../navbar-footer.css");

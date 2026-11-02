@@ -1,0 +1,13 @@
+/* Page stylesheet entrypoint: how-to-audit-website-ai-answer-engines.html */
+/* Import order matches the page's previous stylesheet order. */
+@import url("../../styles.css?v=1.1");
+@import url("../../blog.css?v=1.3");
+@import url("../../navbar-footer.css");
+
+/* Page-specific inline rules, moved from the HTML head. */
+.toc-container,
+            .toc-container h2,
+            .toc-container a,
+            .toc-container li {
+              color: white !important;
+            }

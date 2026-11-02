@@ -4693,6 +4693,7 @@ main h2.split,
         burger.setAttribute("aria-expanded", String(open));
         burger.setAttribute("aria-label", open ? "Close menu" : "Open menu");
         mnav.classList.toggle("is-open", open);
+        document.body.classList.toggle("menu-open", open);
         document.body.style.overflow = open ? "hidden" : "";
         $$(".mnav nav a").forEach((a, i) => { a.style.transitionDelay = open ? (60 + i * 45) + "ms" : "0ms"; });
       };
@@ -5084,6 +5085,61 @@ main section.section,
 
   #mnav {
     padding: 5.5rem 1.35rem 2rem !important;
+  }
+}
+
+/* SEO mobile drawer: clean, uncluttered close control and full-width brand mark. */
+@media (max-width: 1100px) {
+  #mnav::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    border: 0 !important;
+  }
+
+  body.menu-open #nav .burger {
+    position: fixed !important;
+    top: 14px !important;
+    right: 16px !important;
+    left: auto !important;
+    z-index: 2100 !important;
+    width: 40px !important;
+    height: 40px !important;
+    flex: 0 0 40px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  body.menu-open #nav .burger i {
+    left: 10px !important;
+    right: 10px !important;
+    background: #fff !important;
+  }
+
+  body.menu-open #mnav::before {
+    display: block !important;
+    content: "" !important;
+    top: 18px !important;
+    left: 16px !important;
+    width: clamp(130px, 42vw, 175px) !important;
+    height: 30px !important;
+    background: url('/assets/images/image-f445d64e51004507.webp') center left / contain no-repeat !important;
+  }
+}
+
+@media (max-width: 640px) {
+  body.menu-open #nav .burger {
+    top: 14px !important;
+    right: 14px !important;
+  }
+
+  body.menu-open #mnav::before {
+    top: 18px !important;
+    left: 14px !important;
   }
 }
 </style>

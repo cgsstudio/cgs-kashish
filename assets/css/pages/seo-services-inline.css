@@ -3723,3 +3723,235 @@ main section.section,
   }
 }
 
+/* ============ SEO HERO — FULL-BLEED CENTERED LAYOUT ============ */
+.hero {
+  min-height: min(780px, 92svh);
+  display: flex;
+  align-items: center;
+  padding-top: clamp(8rem, 12vw, 10rem);
+  padding-bottom: clamp(4rem, 6vw, 5.5rem);
+  isolation: isolate;
+}
+
+.hero-bg {
+  background-image:
+    linear-gradient(90deg, rgba(5,7,11,.84) 0%, rgba(5,7,11,.76) 42%, rgba(5,7,11,.35) 100%),
+    linear-gradient(180deg, rgba(5,7,11,.3) 0%, rgba(5,7,11,.2) 55%, #07080b 100%),
+    url("/assets/images/seo-hero-bg.webp");
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  transform: scale(1.015);
+}
+
+.hero-grid {
+  opacity: .18;
+  background-size: 88px 88px;
+  mask-image: linear-gradient(90deg, rgba(0,0,0,.55), transparent 92%);
+}
+
+.hero-inner {
+  display: block;
+  width: min(100% - 3rem, 1120px);
+  margin-inline: auto;
+}
+
+.hero-copy {
+  width: 100%;
+  max-width: 920px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-pill {
+  margin-inline: auto;
+  margin-bottom: clamp(1.2rem, 2vw, 1.65rem);
+  background: rgba(15,17,22,.48);
+  border-color: rgba(255,255,255,.24);
+}
+
+.hero-title {
+  max-width: 17ch;
+  margin: 0 auto 1.25rem;
+  font-size: clamp(2.65rem, 6.1vw, 5.25rem);
+  line-height: .99;
+  letter-spacing: -.055em;
+  text-wrap: balance;
+}
+
+.hero-title .word {
+  vertical-align: baseline;
+}
+
+.hero-sub {
+  max-width: 68ch;
+  margin: 0 auto 1rem;
+  color: rgba(248,249,251,.88);
+  font-size: clamp(.98rem, 1.25vw, 1.12rem);
+  line-height: 1.65;
+  text-wrap: pretty;
+}
+
+.hero-note {
+  margin: 0 auto 1.7rem;
+  color: rgba(238,240,244,.64);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.hero-cta {
+  justify-content: center;
+  margin-bottom: 1.9rem;
+}
+
+.hero-trust {
+  justify-content: center;
+  gap: .7rem 1.1rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.hero-trust .mut {
+  color: rgba(239,241,245,.72);
+}
+
+.hero-trust .sep {
+  height: 18px;
+  background: rgba(255,255,255,.22);
+}
+
+.hero-blob.b1 {
+  opacity: .22;
+  right: 0;
+}
+
+.hero-blob.b2,
+.hero-blob.b3 {
+  opacity: .16;
+}
+
+@media (min-width: 1500px) {
+  .hero {
+    min-height: 820px;
+  }
+
+  .hero-copy {
+    max-width: 980px;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    min-height: 720px;
+    padding-top: 8.5rem;
+    padding-bottom: 4rem;
+  }
+
+  .hero-bg {
+    background-position: 63% center;
+    background-image:
+      linear-gradient(90deg, rgba(5,7,11,.88), rgba(5,7,11,.68)),
+      linear-gradient(180deg, rgba(5,7,11,.12), #07080b 100%),
+      url("/assets/images/seo-hero-bg.webp");
+  }
+
+  .hero-title {
+    max-width: 16ch;
+    font-size: clamp(2.5rem, 7.2vw, 4.3rem);
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    min-height: 680px;
+    padding-top: 7.8rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-bg {
+    background-position: 67% center;
+    background-image:
+      linear-gradient(180deg, rgba(5,7,11,.68) 0%, rgba(5,7,11,.82) 48%, #07080b 100%),
+      url("/assets/images/seo-hero-bg.webp");
+  }
+
+  .hero-inner {
+    width: min(100% - 2rem, 1120px);
+  }
+
+  .hero-pill {
+    padding: .52rem .8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-pill p {
+    font-size: .58rem;
+    letter-spacing: .08em;
+  }
+
+  .hero-title {
+    max-width: 15ch;
+    margin-bottom: 1rem;
+    font-size: clamp(2.35rem, 10vw, 3.55rem);
+    line-height: 1.02;
+    letter-spacing: -.05em;
+  }
+
+  .hero-sub {
+    max-width: 42ch;
+    font-size: .94rem;
+    line-height: 1.58;
+  }
+
+  .hero-note {
+    margin-bottom: 1.35rem;
+    font-size: .82rem;
+  }
+
+  .hero-cta {
+    width: 100%;
+    align-items: center;
+    gap: .7rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-cta .btn {
+    min-height: 48px;
+    padding: .9rem 1.15rem;
+    font-size: .85rem;
+  }
+
+  .hero-trust {
+    gap: .55rem .75rem;
+  }
+
+  .hero-trust .mut {
+    font-size: .72rem;
+  }
+
+  .hero-trust .sep {
+    height: 14px;
+  }
+
+  .hero-grid {
+    opacity: .1;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-title {
+    font-size: clamp(2.15rem, 9.6vw, 2.75rem);
+  }
+
+  .hero-cta {
+    flex-direction: column;
+  }
+
+  .hero-cta .btn {
+    width: 100%;
+  }
+}
+

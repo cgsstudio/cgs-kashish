@@ -4554,3 +4554,32 @@ main > section:not(.hero) h2.tools-title,
 }
 
  
+
+ 
+/* Tablet only: center the Engagements heading itself, not just its wrapper. */
+@media (min-width: 768px) and (max-width: 1024px) {
+  #packages .sec-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 760px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  #packages .sec-head .eyebrow,
+  #packages .sec-head #pack-h2,
+  #packages .sec-head .lead {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+  }
+
+  #packages .sec-head #pack-h2 {
+    align-self: center;
+  }
+}

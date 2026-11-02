@@ -367,6 +367,21 @@
     gsap.to(".hero-blob.b1", { y: 160, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
     makeMarquee($("#barTrack"), { speed: 70 });
     makeMarquee($("#heroTicker"), { speed: 90 });
+    // Testimonials use a dedicated CSS marquee for a seamless, continuous loop.
+    const testimonialTrack = $('.testi-rail [data-m="testi"]');
+    if (testimonialTrack) {
+      const testimonialSet = $(".m-set", testimonialTrack);
+      if (testimonialSet && !testimonialTrack.dataset.testiLoopReady) {
+        const testimonialClone = testimonialSet.cloneNode(true);
+        testimonialClone.classList.add("m-clone");
+        testimonialClone.setAttribute("aria-hidden", "true");
+        testimonialClone.querySelectorAll("a, button, input, select, textarea").forEach((el) => el.setAttribute("tabindex", "-1"));
+        testimonialTrack.appendChild(testimonialClone);
+        testimonialTrack.dataset.testiLoopReady = "true";
+        testimonialTrack.classList.add("testi-loop-track");
+        testimonialTrack.removeAttribute("data-m");
+      }
+    }
     $$('[data-m]').forEach((t) => makeMarquee(t, { speed: +t.dataset.speed || 50, reverse: !!t.dataset.rev, hoverPause: true }));
     $$(".ind-row .m-track").forEach((t, i) => makeMarquee(t, { speed: [70, 90, 60][i], reverse: i % 2 === 1 }));
     const indRows = $$(".ind-row");

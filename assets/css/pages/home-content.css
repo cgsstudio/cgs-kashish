@@ -5184,3 +5184,30 @@ a.roll.nav-parent .nav-caret {
     -webkit-transform: none !important;
   }
 }
+
+/* Testimonials: seamless two-set infinite marquee */
+.testi-rail .testi-loop-track {
+    animation: testimonials-infinite-loop 58s linear infinite;
+    transform: translate3d(0, 0, 0);
+    width: max-content;
+}
+
+.testi-rail .testi-loop-track:hover {
+    animation-play-state: paused;
+}
+
+.testi-rail .testi-loop-track > .m-set {
+    flex: none;
+}
+
+@keyframes testimonials-infinite-loop {
+    from { transform: translate3d(0, 0, 0); }
+    to { transform: translate3d(-50%, 0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .testi-rail .testi-loop-track {
+        animation: none;
+        transform: none;
+    }
+}

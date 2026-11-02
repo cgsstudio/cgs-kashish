@@ -1599,6 +1599,47 @@
         });
       }
 
+      /* ---------- dynamic SEO motion: pointer glow + scroll parallax ---------- */
+      const dynamicAiCard = $(".ai-card-showcase");
+      const dynamicAiVisual = $(".ai-visual");
+      const dynamicHeroGrid = $(".hero-grid");
+      if (!RM && matchMedia("(hover:hover) and (pointer:fine)").matches && dynamicAiCard) {
+        dynamicAiCard.addEventListener("pointermove", (event) => {
+          const rect = dynamicAiCard.getBoundingClientRect();
+          dynamicAiCard.style.setProperty("--seo-pointer-x", `${((event.clientX - rect.left) / rect.width) * 100}%`);
+          dynamicAiCard.style.setProperty("--seo-pointer-y", `${((event.clientY - rect.top) / rect.height) * 100}%`);
+        });
+        dynamicAiCard.addEventListener("pointerleave", () => {
+          dynamicAiCard.style.setProperty("--seo-pointer-x", "50%");
+          dynamicAiCard.style.setProperty("--seo-pointer-y", "50%");
+        });
+      }
+      if (!RM && (dynamicAiVisual || dynamicHeroGrid)) {
+        let motionFrame = 0;
+        const updateDynamicParallax = () => {
+          motionFrame = 0;
+          const viewportMid = innerHeight * .5;
+          if (dynamicAiVisual) {
+            const rect = dynamicAiVisual.getBoundingClientRect();
+            const distance = (rect.top + rect.height * .5 - viewportMid) / Math.max(innerHeight, 1);
+            dynamicAiVisual.style.setProperty("--seo-float-y", `${Math.max(-1, Math.min(1, distance)) * -16}px`);
+          }
+          if (dynamicHeroGrid) {
+            const hero = $(".hero");
+            if (hero) {
+              const rect = hero.getBoundingClientRect();
+              const progress = Math.max(0, Math.min(1, -rect.top / Math.max(rect.height, 1)));
+              dynamicHeroGrid.style.setProperty("--seo-grid-shift", `${progress * 26}px`);
+            }
+          }
+        };
+        const requestDynamicParallax = () => {
+          if (!motionFrame) motionFrame = requestAnimationFrame(updateDynamicParallax);
+        };
+        addEventListener("scroll", requestDynamicParallax, { passive: true });
+        addEventListener("resize", requestDynamicParallax);
+        requestDynamicParallax();
+      }
       /* ---------- process timeline ---------- */
       const proc = $("#proc"), procFill = $("#procFill");
       const steps = $$(".step");

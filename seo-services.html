@@ -1497,7 +1497,7 @@
       else { requestAnimationFrame(() => setTimeout(enterHero, 220)); }
 
       /* ---------- reveal on scroll ---------- */
-      const revealEls = $("[data-rv]");
+      const revealEls = $$("[data-rv]");
 
       if ("IntersectionObserver" in window && !RM) {
         const io = new IntersectionObserver((entries) => {

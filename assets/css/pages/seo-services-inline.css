@@ -3032,11 +3032,7 @@ main h2.split,
 
 
 
-/* Scroll reveals are controlled by the page IntersectionObserver. */
-
-.word>i {
-  transform: none !important
-}
+/* Scroll reveals and hero word motion are controlled by the page animation script. */
 
 /* Consistent vertical spacing for every content section on the SEO page. */
 main section.section,
@@ -3606,3 +3602,124 @@ main section.section,
     transform: none;
   }
 }
+
+/* ============ POLISHED SEO PAGE MOTION ============ */
+[data-rv] {
+  filter: blur(4px);
+  will-change: opacity, transform, filter;
+  transition:
+    opacity .75s cubic-bezier(.22, 1, .36, 1),
+    transform .75s cubic-bezier(.22, 1, .36, 1),
+    filter .75s cubic-bezier(.22, 1, .36, 1);
+}
+
+[data-rv].is-in {
+  filter: blur(0);
+  will-change: auto;
+}
+
+.hero-title .word > i {
+  transition: transform .85s cubic-bezier(.22, 1, .36, 1);
+}
+
+.hero-pill,
+.hero-sub,
+.hero-cta,
+.hero-trust {
+  animation: seoHeroRise .8s cubic-bezier(.22, 1, .36, 1) both;
+}
+
+.hero-pill { animation-delay: .08s; }
+.hero-sub { animation-delay: .2s; }
+.hero-cta { animation-delay: .32s; }
+.hero-trust { animation-delay: .44s; }
+
+@keyframes seoHeroRise {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.svc,
+.price,
+.pf,
+.step-num,
+.tool-chips .tool-chip {
+  transform-origin: center bottom;
+  backface-visibility: hidden;
+}
+
+.svc,
+.price,
+.pf {
+  transition:
+    transform .4s cubic-bezier(.22, 1, .36, 1),
+    box-shadow .4s ease,
+    border-color .35s ease;
+}
+
+.svc:hover,
+.price:hover,
+.pf:hover {
+  transform: translateY(-6px);
+}
+
+.metrics .metric,
+.hv,
+.ai-card,
+.form-card {
+  transition:
+    transform .55s cubic-bezier(.22, 1, .36, 1),
+    box-shadow .55s ease,
+    border-color .4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .metrics .metric:hover,
+  .ai-card:hover,
+  .form-card:hover {
+    transform: translateY(-4px);
+  }
+}
+
+@media (max-width: 640px) {
+  [data-rv] {
+    filter: none;
+    transition-duration: .6s;
+  }
+
+  .hero-pill,
+  .hero-sub,
+  .hero-cta,
+  .hero-trust {
+    animation-duration: .65s;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-rv] {
+    filter: none !important;
+    will-change: auto !important;
+  }
+
+  .hero-pill,
+  .hero-sub,
+  .hero-cta,
+  .hero-trust {
+    animation: none !important;
+  }
+
+  .hero-title .word > i {
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .svc:hover,
+  .price:hover,
+  .pf:hover,
+  .metrics .metric:hover,
+  .ai-card:hover,
+  .form-card:hover {
+    transform: none !important;
+  }
+}
+

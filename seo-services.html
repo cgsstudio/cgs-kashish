@@ -1313,7 +1313,7 @@
     }
 
     .m-set span::after {
-      content: "✦";
+
       color: var(--red);
       font-size: .8em
     }
@@ -3150,123 +3150,397 @@
         font-size: clamp(1.8rem, 7vw, 2.4rem)
       }
     }
-  /* Match the homepage trust-section heading and card layout on the SEO page. */
-.seo-proof-bundle .testi-section,
-.seo-proof-bundle .clients-section,
-.seo-proof-bundle .ratings-section {
-  display: block;
-  position: relative;
-  width: 100%;
-  clear: both;
-}
-.seo-proof-bundle .testi-section,
-.seo-proof-bundle .clients-section {
-  padding: clamp(4.5rem, 7vw, 6.5rem) 0;
-}
-.seo-proof-bundle .testi-section .sec-head h2.split,
-.seo-proof-bundle .clients-section .sec-head h2.split,
-.seo-proof-bundle .ratings-section .sec-head h2.split {
-  display: block;
-  max-width: 100%;
-  margin: 1rem auto;
-  text-align: center;
-  line-height: 1.08;
-}
-.seo-proof-bundle .testi-section .sec-head h2.split .grad,
-.seo-proof-bundle .clients-section .sec-head h2.split .grad,
-.seo-proof-bundle .ratings-section .sec-head h2.split .grad {
-  display: inline;
-  white-space: normal;
-}
-.seo-proof-bundle .testi-section .tcard figcaption,
-.seo-proof-bundle .testi-section .tcard figcaption span {
-  display: block;
-  color: #17181d;
-  opacity: 1;
-}
-.seo-proof-bundle .testi-section .tcard figcaption b {
-  display: block;
-  color: #17181d;
-  font-weight: 800;
-  opacity: 1;
-}
-.seo-proof-bundle .testi-section .tcard figcaption small {
-  display: block;
-  margin-top: .35rem;
-  color: #92939a;
-  font-size: .78rem;
-  line-height: 1.4;
-  opacity: 1;
-}
-.seo-proof-bundle .testi-section .tcard {
-  min-height: 325px;
-  box-sizing: border-box;
-}
-.seo-proof-bundle .clients-section {
-  margin-top: 1.5rem;
-}
+
+    /* Match the homepage trust-section heading and card layout on the SEO page. */
+    .seo-proof-bundle .testi-section,
+    .seo-proof-bundle .clients-section,
+    .seo-proof-bundle .ratings-section {
+      display: block;
+      position: relative;
+      width: 100%;
+      clear: both;
+    }
+
+    .seo-proof-bundle .testi-section,
+    .seo-proof-bundle .clients-section {
+      padding: clamp(4.5rem, 7vw, 6.5rem) 0;
+    }
+
+    .seo-proof-bundle .testi-section .sec-head h2.split,
+    .seo-proof-bundle .clients-section .sec-head h2.split,
+    .seo-proof-bundle .ratings-section .sec-head h2.split {
+      display: block;
+      max-width: 100%;
+      margin: 1rem auto;
+      text-align: center;
+      line-height: 1.08;
+    }
+
+    .seo-proof-bundle .testi-section .sec-head h2.split .grad,
+    .seo-proof-bundle .clients-section .sec-head h2.split .grad,
+    .seo-proof-bundle .ratings-section .sec-head h2.split .grad {
+      display: inline;
+      white-space: normal;
+    }
+
+    .seo-proof-bundle .testi-section .tcard figcaption,
+    .seo-proof-bundle .testi-section .tcard figcaption span {
+      display: block;
+      color: #17181d;
+      opacity: 1;
+    }
+
+    .seo-proof-bundle .testi-section .tcard figcaption b {
+      display: block;
+      color: #17181d;
+      font-weight: 800;
+      opacity: 1;
+    }
+
+    .seo-proof-bundle .testi-section .tcard figcaption small {
+      display: block;
+      margin-top: .35rem;
+      color: #92939a;
+      font-size: .78rem;
+      line-height: 1.4;
+      opacity: 1;
+    }
+
+    .seo-proof-bundle .testi-section .tcard {
+      min-height: 325px;
+      box-sizing: border-box;
+    }
+
+    .seo-proof-bundle .clients-section {
+      margin-top: 1.5rem;
+    }
 
 
-/* Imported trust sections from the homepage; styles are scoped to this bundle. */
-.seo-proof-bundle { color:#17181d; background:#f7f6f3; overflow:hidden; }
-.seo-proof-bundle .section { padding:clamp(4rem,7vw,6.5rem) 0; }
-.seo-proof-bundle .wrap { width:min(1280px, calc(100% - 3rem)); margin-inline:auto; }
-.seo-proof-bundle .sec-head { max-width:900px; margin:0 auto 3rem; }
-.seo-proof-bundle .center { text-align:center; }
-.seo-proof-bundle .eyebrow { display:inline-flex; align-items:center; gap:.65rem; padding:.45rem .9rem; border:1px solid rgba(229,22,43,.28); border-radius:999px; color:#e5162b; background:rgba(229,22,43,.06); font:500 .68rem/1.2 monospace; letter-spacing:.16em; text-transform:uppercase; }
-.seo-proof-bundle .eyebrow i { width:7px; height:7px; border-radius:50%; background:#e5162b; display:inline-block; }
-.seo-proof-bundle h2 { margin:1rem auto; color:#17181d; font-size:clamp(2.2rem,4.4vw,4rem); line-height:1.08; letter-spacing:-.055em; font-weight:800; }
-.seo-proof-bundle h2 .grad { color:#ed1730; }
-.seo-proof-bundle .lead { max-width:700px; margin:1.2rem auto 0; color:#65666d; font-size:clamp(1rem,1.4vw,1.2rem); line-height:1.65; }
-.seo-proof-bundle .logo-rows { display:flex; flex-direction:column; gap:1rem; -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent); }
-.seo-proof-bundle .logo-row { overflow:hidden; padding:.3rem 0; }
-.seo-proof-bundle .m-track { display:flex; width:max-content; will-change:transform; }
-.seo-proof-bundle .m-set { display:flex; flex:none; align-items:stretch; }
-.seo-proof-bundle .logo-tile { flex:none; width:clamp(150px,15vw,210px); aspect-ratio:2.1/1; margin-right:1rem; border-radius:18px; background:#fff; border:1px solid #e7e5e1; display:grid; place-items:center; overflow:hidden; filter:grayscale(1); opacity:.78; transition:filter .4s,opacity .4s,transform .4s; }
-.seo-proof-bundle .logo-tile img { width:100%; height:100%; object-fit:contain; }
-.seo-proof-bundle .logo-tile:hover { filter:none; opacity:1; transform:translateY(-4px); }
-.seo-proof-bundle .serve { margin:2.4rem auto 0; color:#65666d; font-size:1.05rem; text-align:center; }
-.seo-proof-bundle .ulink { color:#ed1730; text-decoration:underline; text-underline-offset:4px; }
-.seo-proof-bundle .testi-section { overflow:hidden; }
-.seo-proof-bundle .testi-rail { overflow:hidden; padding:1.5rem 0 2.2rem; position:relative; width:100%; }
-.seo-proof-bundle .tcard { flex:none; width:clamp(320px,32vw,440px); margin-right:1.4rem; padding:2.2rem 2rem; border-radius:28px; background:#fff; border:1px solid #e7e5e1; display:flex; flex-direction:column; gap:1.3rem; }
-.seo-proof-bundle .tq img { width:42px; height:auto; object-fit:contain; }
-.seo-proof-bundle .tcard blockquote { margin:0; color:#66676e; font-size:.98rem; line-height:1.65; }
-.seo-proof-bundle .tcard figcaption { margin-top:auto; color:#17181d; }
-.seo-proof-bundle .tcard figcaption small { display:block; margin-top:.35rem; color:#92939a; }
-.seo-proof-bundle .ratings-section { background:#eeede7; border-radius:36px; margin:0 auto 1rem; padding:clamp(4rem,7vw,6rem) 0; }
-.seo-proof-bundle .rate-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:1.1rem; max-width:1280px; margin:2.5rem auto 0; }
-.seo-proof-bundle .rate-card { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:.7rem; padding:2.2rem 1.4rem; border-radius:28px; background:#fff; border:1px solid #e7e5e1; text-align:center; text-decoration:none; color:#17181d; transition:box-shadow .3s,transform .3s; }
-.seo-proof-bundle .rate-card:hover { box-shadow:0 25px 45px -28px rgba(0,0,0,.3); transform:translateY(-4px); }
-.seo-proof-bundle .rate-card img { height:46px; width:auto; max-width:150px; object-fit:contain; margin-bottom:.4rem; }
-.seo-proof-bundle .rate-card b { font-size:1.05rem; }
-.seo-proof-bundle .rate-card span { font-size:.85rem; color:#777982; }
-.seo-proof-bundle .stars { display:flex; gap:3px; color:#f0a30a; }
-.seo-proof-bundle .stars svg { width:18px; height:18px; }
-@keyframes seoLogoMarquee { to { transform:translateX(-50%); } }
-@keyframes seoTestiMarquee { to { transform:translateX(-50%); } }
-.seo-proof-bundle .logo-row .m-track { animation:seoLogoMarquee 55s linear infinite; }
-.seo-proof-bundle .logo-row:nth-child(2) .m-track { animation-direction:reverse; }
-.seo-proof-bundle .testi-rail .m-track { animation:seoTestiMarquee 70s linear infinite; }
-.seo-proof-bundle .logo-row:hover .m-track,
-.seo-proof-bundle .testi-rail:hover .m-track { animation-play-state:paused; }
-@media(max-width:800px) {
- .seo-proof-bundle .rate-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
- .seo-proof-bundle .wrap { width:calc(100% - 2rem); }
- .seo-proof-bundle .ratings-section { border-radius:24px; }
-}
-@media(max-width:560px) {
- .seo-proof-bundle .section { padding:3.5rem 0; }
- .seo-proof-bundle .sec-head { margin-bottom:2rem; }
- .seo-proof-bundle .rate-grid { gap:.75rem; }
- .seo-proof-bundle .rate-card { padding:1.5rem .8rem; border-radius:20px; }
- .seo-proof-bundle .tcard { width:300px; padding:1.6rem; }
- .seo-proof-bundle .serve { padding-inline:1rem; }
-}
-@media(prefers-reduced-motion:reduce) {
- .seo-proof-bundle .logo-row .m-track,.seo-proof-bundle .testi-rail .m-track { animation:none; }
-}
-</style>
+    /* Imported trust sections from the homepage; styles are scoped to this bundle. */
+    .seo-proof-bundle {
+      color: #17181d;
+      background: #f7f6f3;
+      overflow: hidden;
+    }
+
+    .seo-proof-bundle .section {
+      padding: clamp(4rem, 7vw, 6.5rem) 0;
+    }
+
+    .seo-proof-bundle .wrap {
+      width: min(1280px, calc(100% - 3rem));
+      margin-inline: auto;
+    }
+
+    .seo-proof-bundle .sec-head {
+      max-width: 900px;
+      margin: 0 auto 3rem;
+    }
+
+    .seo-proof-bundle .center {
+      text-align: center;
+    }
+
+    .seo-proof-bundle .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: .65rem;
+      padding: .45rem .9rem;
+      border: 1px solid rgba(229, 22, 43, .28);
+      border-radius: 999px;
+      color: #e5162b;
+      background: rgba(229, 22, 43, .06);
+      font: 500 .68rem/1.2 monospace;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .seo-proof-bundle .eyebrow i {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #e5162b;
+      display: inline-block;
+    }
+
+    .seo-proof-bundle h2 {
+      margin: 1rem auto;
+      color: #17181d;
+      font-size: clamp(2.2rem, 4.4vw, 4rem);
+      line-height: 1.08;
+      letter-spacing: -.055em;
+      font-weight: 800;
+    }
+
+    .seo-proof-bundle h2 .grad {
+      color: #ed1730;
+    }
+
+    .seo-proof-bundle .lead {
+      max-width: 700px;
+      margin: 1.2rem auto 0;
+      color: #65666d;
+      font-size: clamp(1rem, 1.4vw, 1.2rem);
+      line-height: 1.65;
+    }
+
+    .seo-proof-bundle .logo-rows {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+      mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+    }
+
+    .seo-proof-bundle .logo-row {
+      overflow: hidden;
+      padding: .3rem 0;
+    }
+
+    .seo-proof-bundle .m-track {
+      display: flex;
+      width: max-content;
+      will-change: transform;
+    }
+
+    .seo-proof-bundle .m-set {
+      display: flex;
+      flex: none;
+      align-items: stretch;
+    }
+
+    .seo-proof-bundle .logo-tile {
+      flex: none;
+      width: clamp(150px, 15vw, 210px);
+      aspect-ratio: 2.1/1;
+      margin-right: 1rem;
+      border-radius: 18px;
+      background: #fff;
+      border: 1px solid #e7e5e1;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      filter: grayscale(1);
+      opacity: .78;
+      transition: filter .4s, opacity .4s, transform .4s;
+    }
+
+    .seo-proof-bundle .logo-tile img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .seo-proof-bundle .logo-tile:hover {
+      filter: none;
+      opacity: 1;
+      transform: translateY(-4px);
+    }
+
+    .seo-proof-bundle .serve {
+      margin: 2.4rem auto 0;
+      color: #65666d;
+      font-size: 1.05rem;
+      text-align: center;
+    }
+
+    .seo-proof-bundle .ulink {
+      color: #ed1730;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .seo-proof-bundle .testi-section {
+      overflow: hidden;
+    }
+
+    .seo-proof-bundle .testi-rail {
+      overflow: hidden;
+      padding: 1.5rem 0 2.2rem;
+      position: relative;
+      width: 100%;
+    }
+
+    .seo-proof-bundle .tcard {
+      flex: none;
+      width: clamp(320px, 32vw, 440px);
+      margin-right: 1.4rem;
+      padding: 2.2rem 2rem;
+      border-radius: 28px;
+      background: #fff;
+      border: 1px solid #e7e5e1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.3rem;
+    }
+
+    .seo-proof-bundle .tq img {
+      width: 42px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    .seo-proof-bundle .tcard blockquote {
+      margin: 0;
+      color: #66676e;
+      font-size: .98rem;
+      line-height: 1.65;
+    }
+
+    .seo-proof-bundle .tcard figcaption {
+      margin-top: auto;
+      color: #17181d;
+    }
+
+    .seo-proof-bundle .tcard figcaption small {
+      display: block;
+      margin-top: .35rem;
+      color: #92939a;
+    }
+
+    .seo-proof-bundle .ratings-section {
+      background: #eeede7;
+      border-radius: 36px;
+      margin: 0 auto 1rem;
+      padding: clamp(4rem, 7vw, 6rem) 0;
+    }
+
+    .seo-proof-bundle .rate-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1.1rem;
+      max-width: 1280px;
+      margin: 2.5rem auto 0;
+    }
+
+    .seo-proof-bundle .rate-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: .7rem;
+      padding: 2.2rem 1.4rem;
+      border-radius: 28px;
+      background: #fff;
+      border: 1px solid #e7e5e1;
+      text-align: center;
+      text-decoration: none;
+      color: #17181d;
+      transition: box-shadow .3s, transform .3s;
+    }
+
+    .seo-proof-bundle .rate-card:hover {
+      box-shadow: 0 25px 45px -28px rgba(0, 0, 0, .3);
+      transform: translateY(-4px);
+    }
+
+    .seo-proof-bundle .rate-card img {
+      height: 46px;
+      width: auto;
+      max-width: 150px;
+      object-fit: contain;
+      margin-bottom: .4rem;
+    }
+
+    .seo-proof-bundle .rate-card b {
+      font-size: 1.05rem;
+    }
+
+    .seo-proof-bundle .rate-card span {
+      font-size: .85rem;
+      color: #777982;
+    }
+
+    .seo-proof-bundle .stars {
+      display: flex;
+      gap: 3px;
+      color: #f0a30a;
+    }
+
+    .seo-proof-bundle .stars svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    @keyframes seoLogoMarquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    @keyframes seoTestiMarquee {
+      to {
+        transform: translateX(-50%);
+      }
+    }
+
+    .seo-proof-bundle .logo-row .m-track {
+      animation: seoLogoMarquee 55s linear infinite;
+    }
+
+    .seo-proof-bundle .logo-row:nth-child(2) .m-track {
+      animation-direction: reverse;
+    }
+
+    .seo-proof-bundle .testi-rail .m-track {
+      animation: seoTestiMarquee 70s linear infinite;
+    }
+
+    .seo-proof-bundle .logo-row:hover .m-track,
+    .seo-proof-bundle .testi-rail:hover .m-track {
+      animation-play-state: paused;
+    }
+
+    @media(max-width:800px) {
+      .seo-proof-bundle .rate-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .seo-proof-bundle .wrap {
+        width: calc(100% - 2rem);
+      }
+
+      .seo-proof-bundle .ratings-section {
+        border-radius: 24px;
+      }
+    }
+
+    @media(max-width:560px) {
+      .seo-proof-bundle .section {
+        padding: 3.5rem 0;
+      }
+
+      .seo-proof-bundle .sec-head {
+        margin-bottom: 2rem;
+      }
+
+      .seo-proof-bundle .rate-grid {
+        gap: .75rem;
+      }
+
+      .seo-proof-bundle .rate-card {
+        padding: 1.5rem .8rem;
+        border-radius: 20px;
+      }
+
+      .seo-proof-bundle .tcard {
+        width: 300px;
+        padding: 1.6rem;
+      }
+
+      .seo-proof-bundle .serve {
+        padding-inline: 1rem;
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+
+      .seo-proof-bundle .logo-row .m-track,
+      .seo-proof-bundle .testi-rail .m-track {
+        animation: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -4243,7 +4517,7 @@
 
   <!-- Homepage trust sections added to SEO page -->
   <div class="seo-proof-bundle">
-<section class="section light sheet clients-section" id="clients">
+    <section class="section light sheet clients-section" id="clients">
       <div class="wrap">
         <div class="sec-head center">
           <span class="eyebrow"><i></i>Trusted By Clients</span>
@@ -4338,7 +4612,7 @@
       </div>
     </section>
 
-<section class="section light sheet testi-section" id="testimonials">
+    <section class="section light sheet testi-section" id="testimonials">
       <div class="wrap">
         <div class="sec-head center">
           <span class="eyebrow"><i></i>Testimonials</span>
@@ -4349,31 +4623,36 @@
       <div class="testi-rail">
         <div class="m-track" data-m="testi" data-speed="38">
           <div class="m-set">
-            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt="" aria-hidden="true"></span>
+            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt=""
+                  aria-hidden="true"></span>
               <blockquote>Chameleo GFX Studio delivered outstanding brand design with a deep understanding of our
                 vision. The team was proactive, highly responsive, and managed every revision with precision. Their
                 professionalism and commitment to deadlines set them apart.</blockquote>
               <figcaption><span><b>Hocco Ice Cream</b><small>Owner, Premium Dessert Brand</small></span></figcaption>
             </figure>
-            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt="" aria-hidden="true"></span>
+            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt=""
+                  aria-hidden="true"></span>
               <blockquote>The website Chameleo built for Jagatjit Industries is visually captivating, technically
                 flawless, and fully mobile-responsive. Since launch, we have seen a remarkable increase in distributor
                 and partner inquiries globally.</blockquote>
               <figcaption><span><b>Jagatjit Industries</b><small>Legacy Indian Liquor Brand</small></span></figcaption>
             </figure>
-            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt="" aria-hidden="true"></span>
+            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt=""
+                  aria-hidden="true"></span>
               <blockquote>They built our cybersecurity platform website faster than we thought possible, without any
                 compromise on quality. The team understood our requirements from day one. The attention to detail and
                 animations are exceptional.</blockquote>
               <figcaption><span><b>Cybervantage</b><small>AI Security Platform</small></span></figcaption>
             </figure>
-            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt="" aria-hidden="true"></span>
+            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt=""
+                  aria-hidden="true"></span>
               <blockquote>We came to Chameleo with just an idea for Mr. Sprinkle Spices. They built the brand, the
                 website, and the SEO strategy from scratch. Within months we were getting daily orders from people
                 finding us on Google. Best investment made.</blockquote>
               <figcaption><span><b>Mr. Sprinkle</b><small>Premium Spice Brand</small></span></figcaption>
             </figure>
-            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt="" aria-hidden="true"></span>
+            <figure class="tcard"><span class="tq"><img src="/assets/image/testimonial-quote.png" alt=""
+                  aria-hidden="true"></span>
               <blockquote>Chameleo&#x27;s creative team genuinely understands our space industry aesthetic. They deliver
                 cutting-edge visuals on time, every time. Our brand recognition and customer engagement have improved
                 significantly.</blockquote>
@@ -4384,12 +4663,13 @@
         </div>
       </div>
       <div class="wrap center">
-        <p class="serve" data-r>Join the brands that grew with Chameleo. <a class="ulink" href="/pages/contact.html">Book a Free
+        <p class="serve" data-r>Join the brands that grew with Chameleo. <a class="ulink"
+            href="/pages/contact.html">Book a Free
             Strategy Call.</a></p>
       </div>
     </section>
 
-<section class="ratings-section section paper2 sheet" id="ratings">
+    <section class="ratings-section section paper2 sheet" id="ratings">
       <div class="wrap">
         <div class="sec-head center">
           <span class="eyebrow"><i></i>Trusted by fast-growing brands across India</span>
@@ -4483,17 +4763,17 @@
   </div>
 
 
-<script>
-(function(){
-  var root=document.querySelector('.seo-proof-bundle');
-  if(!root) return;
-  root.querySelectorAll('.logo-row .m-set,.testi-rail .m-set').forEach(function(set){
-    var clone=set.cloneNode(true);
-    clone.setAttribute('aria-hidden','true');
-    set.parentNode.appendChild(clone);
-  });
-})();
-</script>
+  <script>
+    (function () {
+      var root = document.querySelector('.seo-proof-bundle');
+      if (!root) return;
+      root.querySelectorAll('.logo-row .m-set,.testi-rail .m-set').forEach(function (set) {
+        var clone = set.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        set.parentNode.appendChild(clone);
+      });
+    })();
+  </script>
 
 
   <!-- Homepage trust sections added to SEO page -->

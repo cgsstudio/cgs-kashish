@@ -3032,10 +3032,7 @@ main h2.split,
 
 
 
-[data-rv] {
-  opacity: 1 !important;
-  transform: none !important
-}
+/* Scroll reveals are controlled by the page IntersectionObserver. */
 
 .word>i {
   transform: none !important
